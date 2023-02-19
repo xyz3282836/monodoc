@@ -14,9 +14,11 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "xyz328236/monodoc",
+  repo: "xyz3282836/monodoc",
 
-  docsDir: "note/src",
+  docsDir: "packages/note/src",
+
+  docsBranch: "master",
 
   locales: {
     "/": {
