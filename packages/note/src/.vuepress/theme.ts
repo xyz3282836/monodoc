@@ -1,44 +1,25 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://www.ruizhou.cf",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "rz",
+    url: "https://github.com/xyz3282836/monodoc",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "xyz328236/monodoc",
 
-  docsDir: "demo/theme-docs/src",
+  docsDir: "note/src",
 
   locales: {
     "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
       // navbar
       navbar: zhNavbar,
 
@@ -49,25 +30,23 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "Edit this page on GitHub",
       },
     },
   },
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      "/raw/面试.html": ["123456xxx"],
     },
   },
 
   plugins: {
-    comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Waline",
-    },
+    // comment: {
+    //   // @ts-expect-error: You should generate and use your own comment service
+    //   provider: "Waline",
+    // },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {

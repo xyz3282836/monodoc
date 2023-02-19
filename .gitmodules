@@ -1,0 +1,3 @@
+[submodule "packages/note/src/.vuepress/dist"]
+	path = packages/note/src/.vuepress/dist
+	url = git@github.com:xyz3282836/note.git
