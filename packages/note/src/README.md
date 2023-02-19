@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Project home
-heroImage: /logo.svg
+heroImage: /hero.png
 heroText: note doc
 tagline: 包含多个技术领域
 
