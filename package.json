@@ -1,0 +1,23 @@
+{
+  "name": "monodoc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "note:build": "pnpm --filter=note docs:build",
+    "note:clean-dev": "pnpm --filter=note docs:clean-dev",
+    "note:dev": "pnpm --filter=note docs:dev",
+    "blog:build": "pnpm --filter=blog docs:build",
+    "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
+    "blog:dev": "pnpm --filter=blog docs:dev",
+    "demo:dev": "pnpm --filter=demo dev",
+    "demo:build": "pnpm --filter=demo build",
+    "demo:preview": "pnpm --filter=demo preview"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "license": "ISC"
+}
