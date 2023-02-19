@@ -8,7 +8,8 @@
     "note:dev": "pnpm --filter=note docs:dev",
     "blog:build": "pnpm --filter=blog docs:build",
     "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
-    "blog:dev": "pnpm --filter=blog docs:dev"
+    "blog:dev": "pnpm --filter=blog docs:dev",
+    "docs:mv": "cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git add ./* && git commit -m 'update doc' && git push"
   },
   "dependencies": {
 
