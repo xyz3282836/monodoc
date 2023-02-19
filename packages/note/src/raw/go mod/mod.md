@@ -1,6 +1,8 @@
 
 
+# Go Mod
 
+## 常用命令
 
 ```shell
 //目标 repo 有哪些版本
@@ -28,9 +30,7 @@ go get [option] repo
 
 参考：https://www.cnblogs.com/apocelipes/p/9537659.html
 
-
-
-![image-20230202173900648](/Users/zhou/Nutstore Files/我的坚果云/读书笔记/img/go-mod-replace-demo.png)
+![image-20230202173900648](./../img/go-mod-replace-demo.png)
 
 ```shell
 

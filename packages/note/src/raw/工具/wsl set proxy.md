@@ -1,4 +1,4 @@
-# wsl2 set network proxy in win11
+# wsl2
 
 ## 脚本
 
