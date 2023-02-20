@@ -12,7 +12,7 @@ static策略就是我们常说的CPU绑核，对应到docker运行时就是CPUSe
 
 docker对于配置cpuset的容器，会使用cgroup的cpuset的子系统，将容器namespace和CPU序号绑定到一起。
 
-![img](./../img/image2020-2-27_17-25-19.png)
+![](./../img/image2020-2-27_17-25-19.png)
 
 
 

@@ -23,7 +23,7 @@
 |            |       **`filter`**        | **`filter`** | **`filter`** |             |
 |    raw     |                           |              |     raw      |             |
 
-![img](../img/iptables-chain.png)
+![](../img/iptables-chain.png)
 
 ## 访问模式
 
@@ -247,7 +247,7 @@ iptables -t nat -A POSTROUTING -p tcp -d 192.168.1.8 --dport 7777 -j SNAT --to-s
 
  两台AWS主机，一台位于伦敦，一台位于俄勒冈。红色为对应主机的公网 ip. 黑色为私网ip. 将 London 主机的 8016 端口转发到 Oregon 的 8017 端口。
 
- ![img](./../img/715460-20210422095832860-1720008353.png)
+ ![](./../img/715460-20210422095832860-1720008353.png)
 
  在 London 主机上操作：
 
@@ -256,11 +256,11 @@ iptables -t nat -A PREROUTING -p tcp --dport 8016 -j DNAT --to-destination 18.22
 iptables -t nat -A POSTROUTING -p tcp -d 18.222.236.211 --dport 8017 -j SNAT --to-source 10.53.1.49
 ```
 
- 在 London 主机上抓包： ![img](./../img/715460-20210422095843142-1162842347.png)
+ 在 London 主机上抓包： ![](./../img/715460-20210422095843142-1162842347.png)
 
 注意：这里关键的地方在于 SNAT 之后的 source 地址只能是内网地址，不能 London 主机的公网地址。如果配成了 London 主机的公网地址，抓包结果如下，转发不会成功。
 
-![img](./../img/715460-20210422095852587-1289855642.png)
+![](./../img/715460-20210422095852587-1289855642.png)
 
 虽然通过公网 ip 连接主机，但实际上在主机上抓包显示，数据包的目的地址都是主机的私网地址。DNAT 修改了数据包的目的地址，SNAT修改了数据包的源地址，一旦源地址被修改为本机的公网地址，该数据包将会被丢弃。
 

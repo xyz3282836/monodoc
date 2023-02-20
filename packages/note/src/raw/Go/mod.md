@@ -1,6 +1,6 @@
-# mod
+# Go Mod
 
-
+## 常用命令
 
 ```shell
 //目标 repo 有哪些版本
@@ -24,3 +24,18 @@ go get [option] repo
 
 ```
 
+
+
+参考：https://www.cnblogs.com/apocelipes/p/9537659.html
+
+![](./../img/go-mod-replace-demo.png)
+
+```shell
+
+
+go mod edit -replace=go-live=git.bilibili.co/live-dev/go-live@master
+
+@latest 优先tag，有tag则最新tag，没有则最新commit
+@master master分支的最新commit
+
+```

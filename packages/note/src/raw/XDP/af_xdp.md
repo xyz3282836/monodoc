@@ -10,7 +10,7 @@ eBFP有很多钩子，而XDP就是linux 网络数据处理的一个hook点。XDP
 
 三种运行模式：generic，native，offload。
 
-![图片](./../img/ebpf-xdp.png)
+![](./../img/ebpf-xdp.png)
 
 offload 是直接在网卡中对xdp程序进行处理，挂载点最靠前，性能最佳，但是需要硬件特别支持
 

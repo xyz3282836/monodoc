@@ -42,7 +42,7 @@ less 10  抓取小于10字节的包
 
 greater 100 抓取大于100字节的包
 
-![image-20220703140958387](./../img/tcpdump.png)
+![](./../img/tcpdump.png)
 
 
 

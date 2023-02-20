@@ -21,7 +21,7 @@ $ls /etc/hosts
 
  ls还可以列出指定目录下的文件列表。
 
-![image-20191221161638964](https://mmbiz.qpic.cn/mmbiz_jpg/2M8qPJibxTd4eI4ChNmP9OtgTa67xXQVzupJOQK7ibdoMts27AsEHw9AYFPpBN2PTf9TribPRqTyPoGxIhib0lqICA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)image-20191221161638964
+![](https://mmbiz.qpic.cn/mmbiz_jpg/2M8qPJibxTd4eI4ChNmP9OtgTa67xXQVzupJOQK7ibdoMts27AsEHw9AYFPpBN2PTf9TribPRqTyPoGxIhib0lqICA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)image-20191221161638964
 
 #### ls 参数格式
 
@@ -1194,7 +1194,7 @@ find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression] find [-H | -L | -P]
 
 **-name参数常用参数示例** 查找/user目录下所有以.log结尾的文件
 
-![image-20191225235202419](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)image-20191225235202419
+![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)image-20191225235202419
 
 **-exec 参数后面跟的是command，它的终止是以`;`为结束标志的，所以这句命令后面的分号是不可缺少的，考虑到各个系统中分号会有不同的意义，所以前面加反斜杠。**
 

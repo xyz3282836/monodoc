@@ -4,7 +4,7 @@
 
 win11 picgo gen
 
-![image-20230204232615303](http://pic.ruizhou.cf/PicGo/202302042326105.png)
+![](http://pic.ruizhou.cf/PicGo/202302042326105.png)
 
 
 

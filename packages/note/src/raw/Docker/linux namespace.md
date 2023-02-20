@@ -1,6 +1,6 @@
 # linux namespace
 
-![image-20220819092737036](./../img/image-20220819092737036.png)
+![](./../img/image-20220819092737036.png)
 
 namespace 主要特性就是资源隔离
 

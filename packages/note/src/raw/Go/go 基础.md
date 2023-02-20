@@ -36,7 +36,7 @@ SP：栈顶指针，**栈指针寄存器**，总是指向栈顶
 
 **栈的增长方向永远是从底到顶，所以栈顶和栈底不是上下决定，而是有入栈方向决定**
 
-![32867-Linux_UNIX系统编程手册（上、下册），第 125 页](./../img/32867-Linux_UNIX系统编程手册（上、下册），第 125 页.png)
+![](./../img/32867-Linux_UNIX系统编程手册（上、下册），第 125 页.png)
 
 https://zhuanlan.zhihu.com/p/447224382
 
@@ -62,9 +62,9 @@ MOVD $1,DX
 MOVQ $-10,AX
 ```
 
-![img](./../img/函数栈帧空间.png)
+![](./../img/函数栈帧空间.png)
 
-![img](./../img/goroutine-stack.png)
+![](./../img/goroutine-stack.png)
 
 ## Go类型系统
 

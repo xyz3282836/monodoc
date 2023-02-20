@@ -31,7 +31,7 @@ BenchmarkGetPrimes-8被称为单个性能测试的名称，它表示命令执行
 
 
 
-![img](./../img/go-test.png)
+![](./../img/go-test.png)
 
 run test
 

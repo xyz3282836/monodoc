@@ -30,7 +30,7 @@ go get [option] repo
 
 参考：https://www.cnblogs.com/apocelipes/p/9537659.html
 
-![image-20230202173900648](./../img/go-mod-replace-demo.png)
+![](./../img/go-mod-replace-demo.png)
 
 ```shell
 
