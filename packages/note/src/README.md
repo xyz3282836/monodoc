@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: Project home
+title: rz的文档
 heroImage: /2233.png
 heroText: note doc
 tagline: 包含多个技术领域
