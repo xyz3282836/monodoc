@@ -6,6 +6,7 @@
     "note:build": "pnpm --filter=note docs:build",
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
+    "note:update-package": "pnpm --filter=note docs:update-package",
     "blog:build": "pnpm --filter=blog docs:build",
     "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
     "blog:dev": "pnpm --filter=blog docs:dev",
