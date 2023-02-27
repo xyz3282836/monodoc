@@ -3,20 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "note:build": "pnpm --filter=note docs:build",
+    "note:new": "rm -fr ./packages/note/src/raw/ && cp -r /Users/zhou/Documents/我的坚果云/读书笔记/ ./packages/note/src/raw/",
+    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git add ./ && git commit -m 'update doc' && git push",
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
     "note:update-package": "pnpm --filter=note docs:update-package",
     "blog:build": "pnpm --filter=blog docs:build",
     "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
-    "blog:dev": "pnpm --filter=blog docs:dev",
-    "docs:mv": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git add ./ && git commit -m 'update doc' && git push"
+    "blog:dev": "pnpm --filter=blog docs:dev"
   },
-  "dependencies": {
-
-  },
-  "devDependencies": {
-
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "license": "ISC"
 }

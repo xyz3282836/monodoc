@@ -32,10 +32,10 @@ go get [option] repo
 
 ```shell
 
-
 go mod edit -replace=go-live=git.bilibili.co/live-dev/go-live@master
 
 @latest 优先tag，有tag则最新tag，没有则最新commit
 @master master分支的最新commit
 
 ```
+
