@@ -1,0 +1,4 @@
+dist/
+node_modules/
+
+src/code/language/js/es6/array.md
