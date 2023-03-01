@@ -10,7 +10,8 @@
     "note:update-package": "pnpm --filter=note docs:update-package",
     "blog:build": "pnpm --filter=blog docs:build",
     "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
-    "blog:dev": "pnpm --filter=blog docs:dev"
+    "blog:dev": "pnpm --filter=blog docs:dev",
+    "acp": "git add ./ && git commit -m 'update doc' && git push"
   },
   "dependencies": {},
   "devDependencies": {},
