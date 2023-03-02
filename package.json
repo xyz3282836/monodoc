@@ -9,9 +9,8 @@
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
     "note:update-package": "pnpm --filter=note docs:update-package",
-    "blog:build": "pnpm --filter=blog docs:build",
-    "blog:clean-dev": "pnpm --filter=blog docs:clean-dev",
-    "blog:dev": "pnpm --filter=blog docs:dev"
+    "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../blog && cd ../blog && git add ./ && git commit -m 'update doc' && git push",
+    "blog:dev": "pnpm --filter=blog dev:vite"
   },
   "dependencies": {},
   "devDependencies": {},
