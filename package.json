@@ -5,11 +5,11 @@
   "scripts": {
     "acp": "git add ./ && git commit -m 'update doc' && git push",
     "note:new": "rm -fr ./packages/note/src/raw/ && cp -r /Users/zhou/Documents/我的坚果云/读书笔记/ ./packages/note/src/raw/",
-    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git add ./ && git commit -m 'update doc' && git push",
+    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git pull && git add ./ && git commit -m 'update doc' && git push",
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
     "note:update-package": "pnpm --filter=note docs:update-package",
-    "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../blog && cd ../blog && git add ./ && git commit -m 'update doc' && git push",
+    "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../blog && cd ../blog && git pull && git add ./ && git commit -m 'update doc' && git push",
     "blog:dev": "pnpm --filter=blog dev:vite"
   },
   "dependencies": {},
