@@ -20,6 +20,8 @@ export default hopeTheme({
 
   docsBranch: "master",
 
+  sidebarSorter: ["readme", "order", "date-desc", "title", "filename"],
+
   locales: {
     /**
      * Chinese locale config
