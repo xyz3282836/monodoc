@@ -7,6 +7,7 @@ export const zhNavbar = navbar([
     icon: "note",
     prefix: "/english/",
     children: [
+      { text: "每日英文", link: "", icon: "sum", activeMatch: "^/everyday/$" },
       {
         text: "词汇",
         prefix: "vocabulary/",
