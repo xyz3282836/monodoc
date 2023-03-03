@@ -64,10 +64,13 @@ export default hopeTheme({
       rss: true,
     },
 
-    // comment: {
-    //   // @ts-expect-error: You should generate and use your own comment service
-    //   provider: "Giscus",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "xyz3282836/blog",
+      repoId: "R_kgDOJEDWqA",
+      category: "Announcements",
+      categoryId: "DIC_kwDOJEDWqM4CUnXX",
+    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
