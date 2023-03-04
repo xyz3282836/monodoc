@@ -15,18 +15,19 @@
     "dev:webpack": "vuepress-webpack dev src",
     "dev:webpack-clean": "vuepress-webpack dev src --clean-cache",
     "dev:webpack-debug": "cross-env DEBUG=vuepress* vuepress-webpack dev src",
-    "lint": "prettier --check --write ./src/code/language/markdown/block.md",
-    "lint:check": "prettier --check ./src/code/language/markdown/block.md",
+    "lint": "prettier --check --write ./",
+    "lint:check": "prettier --check ./",
     "lint-md": "markdownlint **/*.md --ignore node_modules --fix",
-    "test": "echo \"Warning: no test specified\" && exit 0"
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "update-package": "pnpm dlx vp-update"
   },
   "dependencies": {
     "@vuepress/cli": "2.0.0-beta.61",
     "@vuepress/client": "2.0.0-beta.61",
     "@vuepress/plugin-docsearch": "2.0.0-beta.61",
     "sass-loader": "13.2.0",
-    "vue": "3.2.47",
-    "vuepress-theme-hope": "2.0.0-beta.185",
+    "vue": "^3.2.47",
+    "vuepress-theme-hope": "2.0.0-beta.187",
     "vuepress-vite": "2.0.0-beta.61",
     "vuepress-webpack": "2.0.0-beta.61"
   },

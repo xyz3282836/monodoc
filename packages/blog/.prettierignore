@@ -2,3 +2,6 @@ dist/
 node_modules/
 
 src/code/language/js/es6/array.md
+src/.vuepress/.temp
+src/.vuepress/.cache
+pnpm-lock.yaml

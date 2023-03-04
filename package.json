@@ -13,7 +13,9 @@
     
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
+    
     "note:update-package": "pnpm --filter=note docs:update-package",
+    "blog:update-package": "pnpm --filter=blog update-package",
     
     "blog:dev": "pnpm --filter=blog dev:vite"
   },
