@@ -4,4 +4,4 @@
 
 在vim输入以下命令就可以格式化
 
-:%!python -m json.tool
+:%!python3 -m json.tool
