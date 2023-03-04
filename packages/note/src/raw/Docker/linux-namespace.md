@@ -1,4 +1,4 @@
-# linux namespace
+# linux-namespace
 
 ![](./../img/image-20220819092737036.png)
 
