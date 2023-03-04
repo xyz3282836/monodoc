@@ -8,8 +8,8 @@
 
     "acp": "git add ./ && git commit -m 'update doc' && git push",
     
-    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../note && cd ../note && git pull && git add ./ && git commit -m 'update doc' && git push",
-    "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../blog && cd ../blog && git pull && git add ./ && git commit -m 'update doc' && git push",
+    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../.temp/note && cd ../note && git pull && mv .git ../.temp/note/ && cd ../ && rm -fr note && mv ./.temp/note ./ && cd note && git add ./ && git commit -m 'update doc' && git push",
+    "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/note/src/.vuepress/dist/ ../.temp/blog && cd ../blog && git pull && mv .git ../.temp/blog/ && cd ../ && rm -fr blog && mv ./.temp/blog ./ && cd blog && git add ./ && git commit -m 'update doc' && git push",
     
     "note:clean-dev": "pnpm --filter=note docs:clean-dev",
     "note:dev": "pnpm --filter=note docs:dev",
