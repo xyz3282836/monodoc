@@ -14,3 +14,5 @@ protoc -I/Users/zhou/go/src -I/Users/zhou/go/src/git.bilibili.co/bapis -I/Users/
 
 protoc --bswagger_out=explicit_http=0:. --bm_out=explicit_http=0,pb_over_http=1:. --markdown_out=explict_http=0:. -I/Users/zhou/go/src -I/Users/zhou/go/src/go-live -I/Users/zhou/go/src/go-live/third -I/Users/zhou/go/src/git.bilibili.co/bapis go-live/app/service/xroom/api/api.proto
 ```
+
+proto.Marshal slice 会被序列化成 nil，而 json 的序列化对于结构体中 slice 为 nil 和[]是两种不同的结果前者 null，后者[]
