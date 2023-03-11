@@ -1,4 +1,4 @@
-# 毛老师推荐doc
+# 毛老师推荐
 
 Quick Start：
 https://golang.org/doc/install

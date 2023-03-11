@@ -417,12 +417,14 @@ rpm 参数 软件包
 -qf <文件名>：查询文件所属软件。
 -e <软件名>：删除软件。
 
+```shell
 rpm -ivh bind-9.3.6-4.P1.el5_4.2.i386.rpm#安装
 rpm -Uvh/Fvh bind-9.3.6-4.P1.el5_4.2.i386.rpm #升级安装
 rpm -e bind-9.3.6-4.P1.el5_4.2.i386 #删除软件包
 rpm -qpi _.rpm #查看软件包里的内容
 rpm -qpl _.rpm #查看软件包将会在系统里安装哪些部分
 rpm –qa #列出所有被安装的 rpm 软件包
+```
 
 挂载
 mount /mnt/cdrom/
