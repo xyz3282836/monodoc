@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "note:new": "rm -fr ./packages/note/src/root/ && cp -r ~/jg/doc/ ./packages/note/src/root/",
+    "note:new": "mv ./packages/note/src/.vuepress ./packages/note/ && rm -fr ./packages/note/src && cp -r ~/jg/doc/ ./packages/note/src && mv ./packages/note/.vuepress ./packages/note/src/",
     "blog:new": "mv ./packages/blog/src/.vuepress ./packages/blog/ && rm -fr ./packages/blog/src && cp -r ~/jg/blog/ ./packages/blog/src && mv ./packages/blog/.vuepress ./packages/blog/src/",
 
     "acp": "git add ./ && git commit -m 'update doc' && git push",
     
-    "note:build": "pnpm --filter=note docs:build && cp -r ./packages/note/src/.vuepress/dist/ ../.temp/note && cd ../note && git pull && mv .git ../.temp/note/ && cd ../ && rm -fr note && mv ./.temp/note ./ && cd note && git add ./ && git commit -m 'update doc' && git push",
+    "note:build": "pnpm --filter=note build:vite && cp -r ./packages/note/src/.vuepress/dist/ ../.temp/note && cd ../note && git pull && mv .git ../.temp/note/ && cd ../ && rm -fr note && mv ./.temp/note ./ && cd note && git add ./ && git commit -m 'update doc' && git push",
     "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../.temp/blog && cd ../blog && git pull && mv .git ../.temp/blog/ && cd ../ && rm -fr blog && mv ./.temp/blog ./ && cd blog && git add ./ && git commit -m 'update doc' && git push",
     
-    "note:clean-dev": "pnpm --filter=note docs:clean-dev",
-    "note:dev": "pnpm --filter=note docs:dev",
+    "note:dev": "pnpm --filter=note dev:vite",
     "blog:dev": "pnpm --filter=blog dev:vite",
     
-    "note:update-package": "pnpm --filter=note docs:update-package",
+    "note:update-package": "pnpm --filter=note update-package",
     "blog:update-package": "pnpm --filter=blog update-package"
     
   },

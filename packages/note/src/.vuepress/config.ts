@@ -1,4 +1,4 @@
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig } from "@vuepress/cli";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -7,8 +7,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "note 的文档演示",
+      title: "rz文档",
+      description: "rz文档",
     },
   },
 

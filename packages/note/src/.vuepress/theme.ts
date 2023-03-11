@@ -49,7 +49,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/raw/面试.html": ["123456xxx"],
+      "/root/面试.html": ["123456xxx"],
     },
   },
 
