@@ -80,7 +80,7 @@ Linux supports a feature to work around this balancing problem - the SO_REUSEPOR
 
 在 4.5 内核中再次引入 EPOLLEXCLUSIVE 来解决，且需要应用层的配合，Ngnix 在 1.11.3 之后添加了 NGX_EXCLUSIVE_EVENT 来支持。
 
-###### reference
+## reference
 
 https://blog.cloudflare.com/the-sad-state-of-linux-socket-balancing/
 
