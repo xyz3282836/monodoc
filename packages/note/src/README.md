@@ -1,11 +1,13 @@
 ---
 home: true
+layout: BlogHome
 icon: home
-title: rz的文档
+title: 主页
 heroImage: /2233.png
-heroText: note doc
-tagline: 包含多个技术领域
+heroText: ruizhou blog
+tagline: site for ruizhou blog
+bgImage: /forest.jpg
+heroFullScreen: true
 
-copyright: false
-footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | MIT Licensed, Copyright © 2019-present Mr.Hope
+footer: '<a href="/about/me.html">关于网站</a>'
 ---

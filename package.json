@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "note:new": "rm -fr ./packages/note/src/raw/ && cp -r /Users/zhou/jg/doc/ ./packages/note/src/raw/",
-    "blog:new": "cp -r /Users/zhou/jg/blog/ ./packages/blog/src/",
+    "note:new": "rm -fr ./packages/note/src/root/ && cp -r ~/jg/doc/ ./packages/note/src/root/",
+    "blog:new": "mv ./packages/blog/src/.vuepress ./packages/blog/ && rm -fr ./packages/blog/src && cp -r ~/jg/blog/ ./packages/blog/src && mv ./packages/blog/.vuepress ./packages/blog/src/",
 
     "acp": "git add ./ && git commit -m 'update doc' && git push",
     
