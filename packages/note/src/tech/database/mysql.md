@@ -2,7 +2,7 @@
 
 ## 运行原理
 
-![](./../img/mysql-operating-principle.png)
+![](./../../img/mysql-operating-principle.png)
 
 ## 连接池
 
@@ -40,7 +40,7 @@ sql 解析器将 sql 优化成 sql`执行计划`，并且由`存储引擎`来负
 
 ## 存储结构
 
-![](./../img/mysql-innodb-store.png)
+![](./../../img/mysql-innodb-store.png)
 
 innodb 主要两个文件，frm 文件存表结构信息，ibd 文件存数据和索引（也叫独立表空间，5.7 后每个表独立一个 ibd）
 
@@ -178,7 +178,7 @@ sql 执行过程
 
 占用`38字节`
 
-![](./../img/mysql-innodb-page-header.png)
+![](./../../img/mysql-innodb-page-header.png)
 
 页号，4 个字节，32 个 bit，大约可以存储 2^32^大约 42 亿个页
 
@@ -194,11 +194,11 @@ sql 执行过程
 
 ### 数据行
 
-![](./../img/mysql-innodb-page-datarow.png)
+![](./../../img/mysql-innodb-page-datarow.png)
 
 包含额外信息，真实数据
 
-![](./../img/mysql-innodb-row-varchar.png)
+![](./../../img/mysql-innodb-row-varchar.png)
 
 varchar 实际存储在溢出页，用 2 个字节来表示这个字段的长度，16 个 bit 可以表示最大 65536 个字节，本身消耗最多两个字节来记录长度，65534 个字节，最大按照 4 个字节一个字符算，65534/4=16383 个字符
 
@@ -212,7 +212,7 @@ varchar 实际存储在溢出页，用 2 个字节来表示这个字段的长度
 
 56 个字节构成了 page header，主要放入统计和通用信息
 
-![](./../img/mysql-innodb-page-page-header.png)
+![](./../../img/mysql-innodb-page-page-header.png)
 
 ## 索引
 
@@ -224,7 +224,7 @@ B+树去处每个非叶子节点的真实数据，用来存放更多的子节点
 
 log(400)20000000=2.69 大约 3 层树高
 
-![](./../img/mysql-innodb-B+tree.png)
+![](./../../img/mysql-innodb-B+tree.png)
 
 > 聚簇索引/主键索引
 >

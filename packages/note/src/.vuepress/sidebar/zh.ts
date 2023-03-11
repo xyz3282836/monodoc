@@ -3,18 +3,8 @@ import { sidebar } from "vuepress-theme-hope";
 export const zhSidebar = sidebar({
   "/": [
     "",
-    {
-      text: "Go",
-      prefix: "go/",
-      children: "structure",
-      collapsible: true,
-    },
-    {
-      text: "源码解读",
-      prefix: "source-code/",
-      children: "structure",
-      collapsible: true,
-    },
+    "go/",
+    "source-code",
     {
       text: "Unix环境高级编程",
       prefix: "apue/",
@@ -83,7 +73,7 @@ export const zhSidebar = sidebar({
     },
   ],
 
-  // "/go/": "structure",
+  "/go/": "structure",
   "/source-code/": "structure",
   // "/apue/": "structure",
   // "/linux/": "structure",
