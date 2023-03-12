@@ -1,4 +1,9 @@
-# 资料
+---
+title: go grpc
+category: 源码
+tag:
+  - grpc
+---
 
 联合 bilibili 的 kratos 的 warden grpc 服务框架[grpc](./../bilibili-kratos/grpc/)
 
