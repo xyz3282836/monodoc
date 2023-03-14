@@ -3,61 +3,39 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      '@vuepress/cli': 2.0.0-beta.61
+      '@vuepress/client': 2.0.0-beta.61
+      '@vuepress/plugin-docsearch': 2.0.0-beta.61
+      cross-env: 7.0.3
+      markdownlint-cli: 0.33.0
+      prettier: 2.8.4
+      sass-loader: 13.2.0
+      vue: ^3.2.47
+      vuepress-plugin-search-pro: 2.0.0-beta.193
+      vuepress-theme-hope: 2.0.0-beta.193
+      vuepress-vite: 2.0.0-beta.61
+      vuepress-webpack: 2.0.0-beta.61
+    dependencies:
+      '@vuepress/cli': 2.0.0-beta.61
+      '@vuepress/client': 2.0.0-beta.61
+      '@vuepress/plugin-docsearch': 2.0.0-beta.61
+      sass-loader: 13.2.0
+      vue: 3.2.47
+      vuepress-plugin-search-pro: 2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy
+      vuepress-theme-hope: 2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy
+      vuepress-vite: 2.0.0-beta.61_lwb2i6paevv6lya3cvvp576ds4
+      vuepress-webpack: 2.0.0-beta.61_vue@3.2.47
+    devDependencies:
+      cross-env: 7.0.3
+      markdownlint-cli: 0.33.0
+      prettier: 2.8.4
 
   packages/blog:
-    specifiers:
-      '@vuepress/cli': 2.0.0-beta.61
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/plugin-docsearch': 2.0.0-beta.61
-      cross-env: 7.0.3
-      markdownlint-cli: 0.33.0
-      prettier: 2.8.4
-      sass-loader: 13.2.0
-      vue: ^3.2.47
-      vuepress-theme-hope: 2.0.0-beta.193
-      vuepress-vite: 2.0.0-beta.61
-      vuepress-webpack: 2.0.0-beta.61
-    dependencies:
-      '@vuepress/cli': 2.0.0-beta.61
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/plugin-docsearch': 2.0.0-beta.61
-      sass-loader: 13.2.0
-      vue: 3.2.47
-      vuepress-theme-hope: 2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy
-      vuepress-vite: 2.0.0-beta.61_lwb2i6paevv6lya3cvvp576ds4
-      vuepress-webpack: 2.0.0-beta.61_vue@3.2.47
-    devDependencies:
-      cross-env: 7.0.3
-      markdownlint-cli: 0.33.0
-      prettier: 2.8.4
+    specifiers: {}
 
   packages/note:
-    specifiers:
-      '@vuepress/cli': 2.0.0-beta.61
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/plugin-docsearch': 2.0.0-beta.61
-      cross-env: 7.0.3
-      markdownlint-cli: 0.33.0
-      prettier: 2.8.4
-      sass-loader: 13.2.0
-      vue: ^3.2.47
-      vuepress-theme-hope: 2.0.0-beta.193
-      vuepress-vite: 2.0.0-beta.61
-      vuepress-webpack: 2.0.0-beta.61
-    dependencies:
-      '@vuepress/cli': 2.0.0-beta.61
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/plugin-docsearch': 2.0.0-beta.61
-      sass-loader: 13.2.0
-      vue: 3.2.47
-      vuepress-theme-hope: 2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy
-      vuepress-vite: 2.0.0-beta.61_lwb2i6paevv6lya3cvvp576ds4
-      vuepress-webpack: 2.0.0-beta.61_vue@3.2.47
-    devDependencies:
-      cross-env: 7.0.3
-      markdownlint-cli: 0.33.0
-      prettier: 2.8.4
+    specifiers: {}
 
 packages:
 
@@ -2121,7 +2099,7 @@ packages:
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 18.15.3
     dev: false
 
   /@types/serve-index/1.9.1:
@@ -7719,6 +7697,49 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
+      - supports-color
+    dev: false
+
+  /vuepress-plugin-search-pro/2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy:
+    resolution: {integrity: sha512-VvDiydQs340nEnffxI/2zEkMUb7l1D7K2TlAmFLL1hE31DapfsZzxe9EMA3b6HJ2JQd5lMK1OOYzTAvWDkEwvA==}
+    engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
+    peerDependencies:
+      '@vuepress/client': 2.0.0-beta.61
+      sass-loader: ^13.2.0
+      vuepress: 2.0.0-beta.61
+      vuepress-vite: 2.0.0-beta.61
+      vuepress-webpack: 2.0.0-beta.61
+    peerDependenciesMeta:
+      '@vuepress/client':
+        optional: true
+      sass-loader:
+        optional: true
+      vuepress:
+        optional: true
+      vuepress-plugin-sass-palette:
+        optional: true
+      vuepress-shared:
+        optional: true
+      vuepress-vite:
+        optional: true
+      vuepress-webpack:
+        optional: true
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.61
+      '@vuepress/shared': 2.0.0-beta.61
+      '@vuepress/utils': 2.0.0-beta.61
+      '@vueuse/core': 9.13.0_vue@3.2.47
+      cheerio: 1.0.0-rc.12
+      chokidar: 3.5.3
+      sass-loader: 13.2.0
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+      vuepress-plugin-sass-palette: 2.0.0-beta.193_jljnehdjjn4dikdiphkzilairy
+      vuepress-shared: 2.0.0-beta.193_zoe5a47cwdjqvq4kvhpikms4d4
+      vuepress-vite: 2.0.0-beta.61_lwb2i6paevv6lya3cvvp576ds4
+      vuepress-webpack: 2.0.0-beta.61_vue@3.2.47
+    transitivePeerDependencies:
+      - '@vue/composition-api'
       - supports-color
     dev: false
 

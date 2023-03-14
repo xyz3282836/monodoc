@@ -18,22 +18,6 @@
     "lint": "prettier --check --write ~/jg/blog",
     "lint:check": "prettier --check ~/jg/blog",
     "lint-md": "markdownlint **/*.md --ignore node_modules --fix",
-    "test": "echo \"Warning: no test specified\" && exit 0",
-    "update-package": "pnpm dlx vp-update"
-  },
-  "dependencies": {
-    "@vuepress/cli": "2.0.0-beta.61",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
-    "sass-loader": "13.2.0",
-    "vue": "^3.2.47",
-    "vuepress-theme-hope": "2.0.0-beta.193",
-    "vuepress-vite": "2.0.0-beta.61",
-    "vuepress-webpack": "2.0.0-beta.61"
-  },
-  "devDependencies": {
-    "cross-env": "7.0.3",
-    "markdownlint-cli": "0.33.0",
-    "prettier": "2.8.4"
+    "test": "echo \"Warning: no test specified\" && exit 0"
   }
 }
