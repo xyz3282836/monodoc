@@ -3,6 +3,7 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const english = arraySidebar([
   "",
   "everyday/",
+  "news/",
   "grammar",
   {
     text: "词汇",

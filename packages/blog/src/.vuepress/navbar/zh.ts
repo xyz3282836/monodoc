@@ -15,6 +15,11 @@ export const zhNavbar = navbar([
         activeMatch: "^/everyday/$",
       },
       {
+        text: "news",
+        link: "news/",
+        activeMatch: "^/news/$",
+      },
+      {
         text: "词汇",
         prefix: "vocabulary/",
         children: ["high-frequency-vocabulary", "root"],
