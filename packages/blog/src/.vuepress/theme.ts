@@ -58,6 +58,22 @@ export default hopeTheme({
       excerptLength: 0,
     },
 
+    components: {
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
+
     feed: {
       atom: true,
       json: true,
