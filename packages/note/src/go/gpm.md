@@ -1,4 +1,7 @@
-# gmp
+---
+title: gmp
+headerDepth: 2
+---
 
 Go 程序执行过
 

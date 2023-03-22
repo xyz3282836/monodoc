@@ -47,6 +47,8 @@ export default hopeTheme({
     },
   },
 
+  headerDepth: 5,
+
   encrypt: {
     config: {
       "/root/面试.html": ["123456xxx"],
