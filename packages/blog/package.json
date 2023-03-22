@@ -15,7 +15,7 @@
     "dev:webpack": "vuepress-webpack dev src",
     "dev:webpack-clean": "vuepress-webpack dev src --clean-cache",
     "dev:webpack-debug": "cross-env DEBUG=vuepress* vuepress-webpack dev src",
-    "lint": "prettier --check --write ./",
+    "lint": "prettier --check --write ~/jg/blog",
     "lint:check": "prettier --check ~/jg/blog",
     "lint-md": "markdownlint **/*.md --ignore node_modules --fix",
     "test": "echo \"Warning: no test specified\" && exit 0"
