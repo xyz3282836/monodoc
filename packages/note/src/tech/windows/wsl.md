@@ -10,7 +10,7 @@ port=10808
 
 PROXY_HTTP="socks5://${hostip}:${port}"
 
-set_proxy(){
+set.proxy(){
   export http_proxy="${PROXY_HTTP}"
   export HTTP_PROXY="${PROXY_HTTP}"
 
@@ -26,7 +26,7 @@ set_proxy(){
   echo "Proxy has been opened."
 }
 
-unset_proxy(){
+unset.proxy(){
   unset http_proxy
   unset HTTP_PROXY
   unset https_proxy
@@ -39,7 +39,7 @@ unset_proxy(){
   echo "Proxy has been closed."
 }
 
-test_setting(){
+test.proxy(){
   echo "Host IP:" ${hostip}
   echo "WSL IP:" ${wslip}
   echo "Try to connect to Google..."
@@ -53,22 +53,28 @@ test_setting(){
 
 if [ "$1" = "set" ]
 then
-  set_proxy
+  set.proxy
 
 elif [ "$1" = "unset" ]
 then
-  unset_proxy
+  unset.proxy
 
 elif [ "$1" = "test" ]
 then
-  test_setting
+  test.proxy
 else
   echo "Unsupported arguments."
 fi
 ```
 
+方式一
+
 - `source ./proxy.sh set`：开启代理
 - `source ./proxy.sh unset`：关闭代理
 - `source ./proxy.sh test`：查看代理状态
+
+方式二
+
+将方法定义放入shrc文件中，直接shell调用
 
 参考：[https://www.cnblogs.com/tuilk/p/16287472.html](https://www.cnblogs.com/tuilk/p/16287472.html)
