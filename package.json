@@ -11,8 +11,6 @@
     "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../.temp/blog && cd ../blog && git pull && mv .git ../.temp/blog/ && cd ../ && rm -fr blog && mv ./.temp/blog ./ && cd blog && git add ./ && git commit -m 'update doc' && git push",
     "note:dev": "pnpm --filter=note dev:vite",
     "blog:dev": "pnpm --filter=blog dev:vite",
-    "note:update-package": "pnpm --filter=note update-package",
-    "blog:update-package": "pnpm --filter=blog update-package",
     "update-package": "pnpm dlx vp-update"
   },
   "dependencies": {
