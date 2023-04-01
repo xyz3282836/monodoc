@@ -4,6 +4,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "note:lint": "pnpm --filter=note lint",
+    "blog:lint": "pnpm --filter=blog lint",
     "note:new": "mv ./packages/note/src/.vuepress ./packages/note/ && rm -fr ./packages/note/src && cp -r ~/jg/doc/ ./packages/note/src && mv ./packages/note/.vuepress ./packages/note/src/",
     "blog:new": "mv ./packages/blog/src/.vuepress ./packages/blog/ && rm -fr ./packages/blog/src && cp -r ~/jg/blog/ ./packages/blog/src && mv ./packages/blog/.vuepress ./packages/blog/src/",
     "acp": "git add ./ && git commit -m 'update doc' && git push",
