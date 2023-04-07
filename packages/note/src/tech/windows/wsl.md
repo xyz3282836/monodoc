@@ -75,6 +75,6 @@ fi
 
 方式二
 
-将方法定义放入shrc文件中，直接shell调用
+将方法定义放入 shrc 文件中，直接 shell 调用
 
 参考：[https://www.cnblogs.com/tuilk/p/16287472.html](https://www.cnblogs.com/tuilk/p/16287472.html)

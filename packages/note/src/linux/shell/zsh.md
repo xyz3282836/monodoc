@@ -6,7 +6,7 @@
 sudo apt-get install zs
 ```
 
-切换zsh
+切换 zsh
 
 ```shell
 chsh -s $(which zsh)
