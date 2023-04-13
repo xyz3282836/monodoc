@@ -8,6 +8,10 @@
 
 [nginx](https://tengine.taobao.org/book/index.html)
 
+### 系统稳定性
+
+https://mp.weixin.qq.com/s/DGFOF7mHVDJdGxNfz8ZIoA
+
 ## 已读待输出
 
 - [ ] linux 内存
