@@ -13,5 +13,5 @@ export const zhSidebar = sidebar({
   "/english/news/": "structure",
 
   // fallback
-  "/": ["", "english/", "tech/", "software/"],
+  "/": ["", "english/", "computer/", "tech/", "software/"],
 });

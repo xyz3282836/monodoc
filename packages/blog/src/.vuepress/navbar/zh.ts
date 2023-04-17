@@ -28,6 +28,12 @@ export const zhNavbar = navbar([
     ],
   },
   {
+    text: "电脑硬件",
+    icon: "computer",
+    prefix: "/computer/",
+    link: "/computer/",
+  },
+  {
     text: "技术",
     icon: "form",
     prefix: "/tech/",
