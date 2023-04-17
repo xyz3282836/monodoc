@@ -1,3 +1,9 @@
+## 前置安装
+
+```
+brew install bufbuild/buf/buf
+```
+
 ## BufCli
 
 https://buf.build/docs/tutorials/getting-started-with-buf-cli
