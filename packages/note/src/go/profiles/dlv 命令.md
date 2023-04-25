@@ -1,3 +1,5 @@
+# dlv 命令
+
 ## 基础
 
 go build 可以用*-gcflags*给*go*编译器传入参数，也就是传给 go tool compile 的参数，因此可以用 go tool compile --help 查看所有可用的参数。
