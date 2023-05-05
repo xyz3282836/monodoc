@@ -99,3 +99,61 @@ https://space.bilibili.com/435304165/video
 综合评价：☆☆☆☆☆
 
 评价：微调大模型，非常强大的训练方式，但是使用上会不那么灵活，推荐训练画风用，人物使用 LoRA 训练。
+
+## 训练
+
+image _ repeat _ epoch / batch_size = total steps
+
+10 张图 _ 20 次 _ 10 个循环 / 2 并行 = 1000 总训练步数
+
+batch_size 和显存大小有关
+
+两者乘积固定的时候，repeat 比 epoch 会更加化时间
+
+20 \* 5 = 100，花费 51min
+
+100 \* 1 = 100，花费 90min
+
+多 epoch 方案的拟合性更好
+
+![repeat vs epoch](./assets/repeat vs epoch.png)
+
+![lr vs lr](./assets/lr vs lr.png)
+
+### 学习率
+
+![lr](./assets/lr.png)
+
+### DIM
+
+表示神经网络的维度，维度越大，模型的表达能力越强，模型的体积也会越大。
+
+network_dimension
+
+- 128，140MB+（现实世界实物，风景，人物 >128）
+- 64，70MB+（人物 32-128）
+- 32，40MB+（二次元）
+
+### Optimizer
+
+AdamW8bit
+
+Dadptation
+
+Lion
+
+## 参数建议
+
+![recommend](./assets/recommend.png)
+
+### 案例
+
+![case1](./assets/case1.png)
+
+![case2](./assets/case2.png)
+
+![case3](./assets/case3.png)
+
+### tag
+
+期望固化的模型特征，不要打 tag，这样使用中就生存固定特征了，而不会被改变
