@@ -13,8 +13,10 @@ export const zhSidebar = sidebar({
   "/english/everyday/": "structure",
   "/english/news/": "structure",
 
+  "/ai/": "structure",
+
   "/computer/": computer,
 
   // fallback
-  "/": ["", "english/", "computer/", "tech/", "software/"],
+  "/": ["", "ai/", "english/", "computer/", "tech/", "software/"],
 });
