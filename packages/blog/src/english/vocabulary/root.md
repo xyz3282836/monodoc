@@ -18,3 +18,5 @@ im- 同 in-，在内，进入
 sub- 从上到下，子的，副手，下一级
 
 pro- 向前，变体 pur-，por-
+
+sur- = over，above，beyond，in addition，超过，在上面，和 super-同源
