@@ -1,1 +1,10 @@
 // place your custom styles here
+.catalog-display-container {
+    overflow-y: auto;
+  
+    max-height: 75vh;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+  
+    overflow-wrap: break-word;
+  }

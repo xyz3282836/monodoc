@@ -22,6 +22,8 @@ export default hopeTheme({
 
   sidebarSorter: ["readme", "order", "date-desc", "title", "filename"],
 
+  fullscreen: true,
+
   locales: {
     /**
      * Chinese locale config
@@ -74,6 +76,8 @@ export default hopeTheme({
       ],
     },
 
+    copyright: true,
+
     feed: {
       atom: true,
       json: true,
@@ -92,18 +96,29 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
+      card: true,
       chart: true,
       codetabs: true,
-      container: true,
       demo: true,
       echarts: true,
       figure: true,
       flowchart: true,
       gfm: true,
       imgLazyload: true,
+      imgMark: true,
       imgSize: true,
-      include: true,
-      katex: true,
+      // include: {
+      //   resolvePath: (file, cwd) => {
+      //     if (file.startsWith("@echarts"))
+      //       return file.replace(
+      //         "@echarts",
+      //         path.resolve(__dirname, "../echarts")
+      //       );
+
+      //     return file;
+      //   },
+      // },
+      mathjax: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -131,62 +146,5 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
-    // uncomment these if you want a PWA
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cachePic: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });
