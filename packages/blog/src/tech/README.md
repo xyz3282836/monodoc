@@ -9,3 +9,4 @@ sticky: 4
 
 - [golang](go/README.md)
 - [yaml](yaml/README.md)
+- [oh my zsh](sh/oh-my-zsh.md)
