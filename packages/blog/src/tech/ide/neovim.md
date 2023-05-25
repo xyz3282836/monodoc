@@ -32,4 +32,3 @@ rm -rf ~/.local/share/nvim
 ```
 
 快捷键
-

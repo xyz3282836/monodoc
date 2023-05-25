@@ -20,4 +20,3 @@ codesign --sign - --force --deep /Applications/Sublime\ Text.app
 ```bash
 sudo spctl --master-disable
 ```
-
