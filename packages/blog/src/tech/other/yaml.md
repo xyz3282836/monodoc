@@ -1,7 +1,7 @@
 ---
 title: YAML 教程
 icon: yaml
-category: YAML
+category: yaml
 ---
 
 编程免不了要写配置文件，怎么写配置也是一门学问。

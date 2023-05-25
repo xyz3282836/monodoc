@@ -13,22 +13,23 @@
     "blog:build": "pnpm --filter=blog build:vite && cp -r ./packages/blog/src/.vuepress/dist/ ../.temp/blog && cd ../blog && git pull && mv .git ../.temp/blog/ && cd ../ && rm -fr blog && mv ./.temp/blog ./ && cd blog && git add ./ && git commit -m 'update doc' && git push",
     "note:dev": "pnpm --filter=note dev:vite",
     "blog:dev": "pnpm --filter=blog dev:vite",
-    "update-package": "pnpm dlx vp-update"
+    "packages:check-update": "pnpm dlx npm-check-updates -u --deep --timeout 600000",
+    "packages:update": "pnpm up -r"
   },
   "dependencies": {
     "@vuepress/cli": "2.0.0-beta.62",
     "@vuepress/client": "2.0.0-beta.62",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
-    "sass-loader": "13.2.0",
+    "@vuepress/plugin-docsearch": "2.0.0-alpha.1",
+    "sass-loader": "13.3.0",
     "vue": "^3.3.4",
-    "vuepress-theme-hope": "2.0.0-beta.212",
+    "vuepress-theme-hope": "2.0.0-beta.214",
     "vuepress-vite": "2.0.0-beta.62",
     "vuepress-webpack": "2.0.0-beta.62",
-    "vuepress-plugin-search-pro": "2.0.0-beta.212"
+    "vuepress-plugin-search-pro": "2.0.0-beta.214"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "markdownlint-cli": "0.33.0",
-    "prettier": "2.8.4"
+    "markdownlint-cli": "0.34.0",
+    "prettier": "2.8.8"
   }
 }

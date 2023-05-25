@@ -5,8 +5,10 @@ star: 4
 sticky: 4
 ---
 
-## 目录
+<!-- markdownlint-disable MD033 -->
 
-- [golang](go/README.md)
-- [yaml](yaml/README.md)
-- [oh my zsh](sh/oh-my-zsh.md)
+<div class="catalog-display-container">
+  <AutoCatalog base='/tech/' />
+</div>
+
+<!-- markdownlint-enable MD033 -->

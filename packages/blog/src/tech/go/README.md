@@ -2,6 +2,8 @@
 title: golang 语言
 icon: go
 category: Go
+tag:
+  - tip
 ---
 
 ::: tip

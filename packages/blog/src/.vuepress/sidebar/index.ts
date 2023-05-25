@@ -14,7 +14,7 @@ export const zhSidebar = sidebar({
   "/english/news/": "structure",
 
   "/ai/": "structure",
-
+  "/tech/": "structure",
   "/computer/": computer,
 
   // fallback
