@@ -22,10 +22,10 @@
     "@vuepress/plugin-docsearch": "2.0.0-alpha.1",
     "sass-loader": "13.3.0",
     "vue": "^3.3.4",
-    "vuepress-theme-hope": "2.0.0-beta.214",
+    "vuepress-theme-hope": "2.0.0-beta.215",
     "vuepress-vite": "2.0.0-beta.62",
     "vuepress-webpack": "2.0.0-beta.62",
-    "vuepress-plugin-search-pro": "2.0.0-beta.214"
+    "vuepress-plugin-search-pro": "2.0.0-beta.215"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
