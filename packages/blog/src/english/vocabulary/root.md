@@ -38,3 +38,7 @@ merg- 沉，没
 如 merge merg 沉，e 向外，一个向下一个向外，就是合并的意思
 
 emerge e 出现，merge 沉没，不是出现合并的东西，而是出现沉没的东西，表示浮现
+
+dom- =hourse，家
+
+duct- to lead = 带领，带来；如 conduct，指导，指挥；传导；induct，指引，使入门；subduct，减去，拿掉
