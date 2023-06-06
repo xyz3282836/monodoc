@@ -29,8 +29,8 @@ go get [option] repo
 ![](./../img/go-mod-replace-demo.png)
 
 ```shell
-
-go mod edit -replace=go-live=git.bilibili.co/live-dev/go-live@master
+go get -u git.bilibili.co/live-dev/go-live[@latest|@master|@1.2.6]
+go mod edit -replace=go-live=git.bilibili.co/live-dev/go-live@v1.2.6
 
 @latest 优先tag，有tag则最新tag，没有则最新commit
 @master master分支的最新commit
