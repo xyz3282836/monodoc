@@ -21,7 +21,7 @@ $ls /etc/hosts
 
 ls 还可以列出指定目录下的文件列表。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/2M8qPJibxTd4eI4ChNmP9OtgTa67xXQVzupJOQK7ibdoMts27AsEHw9AYFPpBN2PTf9TribPRqTyPoGxIhib0lqICA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)image-20191221161638964
+![](./../img/640.png)image-20191221161638964
 
 #### ls 参数格式
 
