@@ -54,3 +54,11 @@ attract：吸引
 contract：合同
 
 detract：减去，贬低；转移，分散
+
+### tir- = draw 拉
+
+retire 退休
+
+### aug- = increase 增加
+
+augment 增加
