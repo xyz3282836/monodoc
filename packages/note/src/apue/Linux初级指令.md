@@ -21,7 +21,7 @@ $ls /etc/hosts
 
 ls 还可以列出指定目录下的文件列表。
 
-![](./../img/640.png)image-20191221161638964
+![ls](./../img/640.png)
 
 #### ls 参数格式
 
@@ -1193,8 +1193,6 @@ find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression] find [-H | -L | -P]
 #### find 常用参数示例
 
 **-name 参数常用参数示例** 查找/user 目录下所有以.log 结尾的文件
-
-![](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)image-20191225235202419
 
 **-exec 参数后面跟的是 command，它的终止是以`;`为结束标志的，所以这句命令后面的分号是不可缺少的，考虑到各个系统中分号会有不同的意义，所以前面加反斜杠。**
 
