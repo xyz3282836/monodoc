@@ -62,3 +62,9 @@ retire 退休
 ### aug- = increase 增加
 
 augment 增加
+
+### vestig- = foot print，track，脚印，踪迹
+
+investigate 调查
+
+vestige 痕迹；遗迹；残余
