@@ -68,3 +68,11 @@ augment 增加
 investigate 调查
 
 vestige 痕迹；遗迹；残余
+
+### estim- = value，价值
+
+esteem 尊敬；尊重；好评
+
+estimable 可尊敬的
+
+estimate 估计，判断
