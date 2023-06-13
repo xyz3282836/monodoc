@@ -94,3 +94,7 @@ dedicate：贡献
 ### seism-，seismo- = earthquake，地震，来自希腊语 seismos/seiein 地震，晃动
 
 seismic：地震的，重大的
+
+### sur- = over，above，beyond，in addtion，超过，在上面，来自拉丁语，和 supre- 同源
+
+surpass 超过，凌驾
