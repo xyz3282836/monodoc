@@ -98,3 +98,23 @@ seismic：地震的，重大的
 ### sur- = over，above，beyond，in addtion，超过，在上面，来自拉丁语，和 supre- 同源
 
 surpass 超过，凌驾
+
+### carb- 碳
+
+carbon 碳
+
+carbohydrate：碳水化合物
+
+### hydr- = water 水，九头蛇海德拉（Hydra）
+
+hydra 九头蛇，难以根除的祸害
+
+hydrant 水龙头；消防栓
+
+hydrate 水合物
+
+hydration 水合作用
+
+dehydrate 脱水
+
+dehydration 脱水

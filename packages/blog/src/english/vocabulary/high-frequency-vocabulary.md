@@ -28,3 +28,15 @@ robe：长袍，礼服
 bathrobe：浴衣，睡衣
 
 brew：酿造，酝酿
+
+### 拟声词
+
+splash：【拟声词】飞溅（水滴）；轰动
+
+scream：尖叫（拟声词）
+
+smash：拟声词，模仿东西碰撞的声音，打碎的意思，比较 smack 击打，crush 压坏
+
+bubble：泡沫（拟声词）
+
+burst：破裂（词源同 break）
