@@ -242,3 +242,47 @@ log(400)20000000=2.69 大约 3 层树高
 
 > 行长度限制
 > The internal representation of a MySQL table has a maximum row size limit of 65,535 bytes, even if the storage engine is capable of supporting larger rows.BLOB and TEXT columns only contribute 9 to 12 bytes toward the row size limit because their contents are stored separately from the rest of the row.
+
+## 锁
+
+锁信息包含
+
+![](./../../img/image-20230615095435033.png)
+
+两个大类表锁，行锁
+
+### 表锁
+
+1. 共享锁 lock_s（读锁）
+2. 独占锁 lock_x（写锁）
+
+#### 意向锁
+
+table level 的锁
+
+在数据所在表上加个标记，其他事物查询是否加锁不需要遍历，大大提升效率
+
+1. 共享意向锁 lock_is
+2. 独占意向锁 lock_ix
+
+```sql
+-- 对查询结果每行，都加共享锁
+select user where id < 10 lock in share mode;
+-- 对查询结果每行，都加独占锁
+select user where id < 10 for update;
+```
+
+3. 自增锁 lock_auto_inc
+
+自增主键保证唯一，注意事物的回滚不能回滚自增主键值
+
+### 行锁
+
+添加在数据或者索引中，也就是聚簇索引树中或者二级索引树的行中
+
+1. next key 锁，就是：gap 锁 + 精确行锁
+2. gap 锁，锁住行与行的间隙，防止在间隙中插入数据
+3. 精准行锁，锁住具体的行
+4. 插入意向锁，是个特殊的 gap 锁，也是共享锁
+
+如果一个行间隙加了 gap 锁，此时如果其他锁也想在这个间隙插入数据，就会加插入意向锁，由于可以共享，所以多个事物都可以加，当 gap 锁释放后，允许多个插入意向锁同时进行，不需要串行执行，提升效率
