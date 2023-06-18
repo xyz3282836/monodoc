@@ -118,3 +118,31 @@ hydration 水合作用
 dehydrate 脱水
 
 dehydration 脱水
+
+### feder- = league，联盟
+
+federal 联邦的
+
+confederate 同盟者，同盟国
+
+confederacy 联盟
+
+### tract- = draw，拉
+
+attract 吸引
+
+contract 合约
+
+detract 减去，贬低
+
+distract 转移
+
+extract 榨取；摘录
+
+subtract 减法
+
+### semble- = alike，same，相似的，一样的
+
+assemble 集合（as- 不断，朝着）
+
+dissemble 掩饰，假装不知道
