@@ -10,6 +10,8 @@ export default hopeTheme({
     url: "https://blog.ruizhou.cf",
   },
 
+  favicon: "/favicon.ico",
+  
   iconAssets: "iconfont",
 
   logo: "/hero.png",
