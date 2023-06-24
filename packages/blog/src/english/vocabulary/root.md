@@ -146,3 +146,17 @@ subtract 减法
 assemble 集合（as- 不断，朝着）
 
 dissemble 掩饰，假装不知道
+
+### sult- 闷热
+
+sultry 闷热的
+
+sultrily 闷热地
+
+swelter vi 闷热；vt. 使闷热
+
+### mal- = bad，wretched，坏，恶
+
+malady 疾病
+
+dismal 阴沉的

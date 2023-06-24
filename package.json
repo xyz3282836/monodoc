@@ -21,10 +21,10 @@
     "@vuepress/client": "2.0.0-beta.63",
     "sass-loader": "13.3.2",
     "vue": "^3.3.4",
-    "vuepress-theme-hope": "2.0.0-beta.226",
+    "vuepress-theme-hope": "2.0.0-beta.228",
     "vuepress-vite": "2.0.0-beta.63",
     "vuepress-webpack": "2.0.0-beta.63",
-    "vuepress-plugin-search-pro": "2.0.0-beta.226"
+    "vuepress-plugin-search-pro": "2.0.0-beta.228"
   },
   "devDependencies": {
     "cross-env": "7.0.3",

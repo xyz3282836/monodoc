@@ -40,3 +40,9 @@ smash：拟声词，模仿东西碰撞的声音，打碎的意思，比较 smack
 bubble：泡沫（拟声词）
 
 burst：破裂（词源同 break）
+
+### cyber- 网络，计算机
+
+cyberattack 网络攻击
+
+cybersecurity 网络安全

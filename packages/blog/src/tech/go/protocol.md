@@ -101,7 +101,7 @@ go install github.com/gogo/protobuf/gogoproto
 
 ### 官方 protoc-gen-go
 
-```
+```bash
 protoc --go_out=/Users/zhou/go/src/grpcdemo/ api/v1/hello.proto
 ```
 
