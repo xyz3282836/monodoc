@@ -160,3 +160,9 @@ swelter vi 闷热；vt. 使闷热
 malady 疾病
 
 dismal 阴沉的
+
+### herb- = grass，草
+
+herbage 草本，草的柔软部分
+
+herbivore 食草动物
