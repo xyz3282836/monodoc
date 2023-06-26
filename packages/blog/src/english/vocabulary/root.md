@@ -166,3 +166,49 @@ dismal 阴沉的
 herbage 草本，草的柔软部分
 
 herbivore 食草动物
+
+### mess-，mit-，miss- = send，cast，送，放出
+
+demisson 辞职；放弃
+
+emission 排放
+
+remiss 不送出去，怠慢的
+
+remissive 宽恕的；减轻的
+
+submission 屈服；服从
+
+### curt-，scr-，shr- = short，短，切开，分开
+
+curt 简略的，简短的
+
+curtail 缩减
+
+shred 碎片；极少量
+
+scar 疤痕
+
+### tain-，ten-，tin- = hold，拿住
+
+contain 包含
+
+detain 扣留
+
+entertain 招待；娱乐（enter 在中间，相互，内）
+
+maintain 维持
+
+obtain 获得（ob- 加强）
+
+retain 保持
+
+sustain 支撑，忍受，承受
+
+### pens- = hang，悬挂
+
+suspend 悬，吊，使悬浮
+
+suspense 悬疑，焦虑
+
+suspension 悬挂；暂停
