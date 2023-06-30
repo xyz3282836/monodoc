@@ -41,6 +41,8 @@ bubble：泡沫（拟声词）
 
 burst：破裂（词源同 break）
 
+whistle：口哨声
+
 ### cyber- 网络，计算机
 
 cyberattack 网络攻击

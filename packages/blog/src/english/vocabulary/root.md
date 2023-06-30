@@ -33,7 +33,11 @@ sur- = over，above，beyond，in addition，超过，在上面，和 super-同�
 
 ### proach- = near 接近
 
-如 approach；reproach；rapprochement
+approach：n. 办法；vt. 来临；靠近；商量，征求
+
+reproach 过分靠近就是责骂的意思
+
+rapprochement
 
 ### merg- 沉，没
 
@@ -212,3 +216,21 @@ suspend 悬，吊，使悬浮
 suspense 悬疑，焦虑
 
 suspension 悬挂；暂停
+
+### ministr- 部长，管理
+
+ministry 部长
+
+minister 部长，牧师
+
+administer 管理员
+
+### dig- 挖，刺
+
+dig 挖
+
+digging n. 挖掘
+
+dike 筑堤防护
+
+digger 挖掘者
