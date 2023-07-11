@@ -9,17 +9,31 @@ tag:
 
 枚举很多常用的词根词缀
 
-de- 从离开，从向下
+### de- 从离开，从向下
 
-e- 从离开，从向外
+### e- 从离开，从向外
 
-im- 同 in-，在内，进入
+### im- 同 in-，在内，进入
 
-sub- 从上到下，子的，副手，下一级
+### pro- 向前，变体 pur-，por-
 
-pro- 向前，变体 pur-，por-
+### sub-，sus 从上到下，子的，副手，下一级
 
-sur- = over，above，beyond，in addition，超过，在上面，和 super-同源
+subhealth 亚健康
+
+suspect 被怀疑
+
+suspend 悬浮
+
+suspense 悬念，暂停
+
+sustain 在下面握住，支撑，承受
+
+### sur- = over，above，beyond，in addition，超过，在上面，和 super-同源
+
+surpass 超过
+
+surplus 过剩
 
 ### ag- ar-
 
@@ -272,3 +286,53 @@ undermine 往下挖，渐渐破坏
 mining 采矿
 
 mineral 矿物；矿物的
+
+### dom-，domin-，tam- = house，屋，家，控制
+
+condominium 共同统治
+
+dimain 领域，领土
+
+### celebr-
+
+celebrant 主持仪式的人；教父
+
+celebrate 庆祝，祝贺
+
+celebratory 庆祝的
+
+celebrity 名声；名人
+
+### fer-，fero- = wild，野
+
+feral 凶猛的，野兽的
+
+ferity 野性
+
+ferocious 残忍的
+
+fierce 凶猛的
+
+### gross- = greate，大
+
+engross 独占；使全神贯注
+
+### merch- = trade，交易
+
+mercantile 商业的；商人的
+
+mercer 绸缎商人
+
+mercy 仁慈；宽恕
+
+merchandise 商品，货物，周边
+
+### vol-，volv-，volut- = roll，turn，卷，转
+
+evolution 进化
+
+involute 内卷的，复杂的
+
+involution 内卷；回旋
+
+revolution 革命，改革

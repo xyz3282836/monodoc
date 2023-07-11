@@ -7,8 +7,6 @@ tag:
   - average
 ---
 
-### **EWMA**
-
 `EWMA (Exponentially Weighted Moving-Average)` 指数移动加权平均法: 是指各数值的加权系数随时间呈指数递减，越靠近当前时刻的数值加权系数就越大，体现了最近一段时间内的平均值。
 
 - 公式： $V_t=\beta*V_{t-1}+(1-\beta)\theta_t$

@@ -43,8 +43,58 @@ burst：破裂（词源同 break）
 
 whistle：口哨声
 
+sizz 嘶嘶声（sizzle 发出嘶嘶声）
+
 ### cyber- 网络，计算机
 
 cyberattack 网络攻击
 
 cybersecurity 网络安全
+
+## 动作
+
+punch 打
+
+beat 连续打
+
+flick 弹
+
+slap 扇
+
+scratch 抓
+
+knock 敲
+
+pinch 捏，拧
+
+pet 抚摸
+
+pat 轻拍
+
+grab 抓
+
+hold 握
+
+lift 举
+
+drop 掉落
+
+push 推
+
+pull 拉
+
+touch 触摸
+
+poke 戳
+
+tickle 胳肢
+
+point 指
+
+rock 轻轻摇晃
+
+cuddle 拥抱
+
+## 副词
+
+ever 任何时候；曾经
