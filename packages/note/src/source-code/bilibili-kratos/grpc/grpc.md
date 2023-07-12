@@ -1,6 +1,6 @@
 # GRPC
 
-## grpc 官方库
+## grpc 服务发现
 
 定义了两个 interface：Resolver 和 Builder
 
@@ -151,9 +151,16 @@ func NewClient(conf *ClientConfig, opt ...grpc.DialOption) *Client {
 
 target 格式
 
-client.Dial => warden.Dial => warden.dial => grpc.DialContext => grpc.newCCResolverWrapper 此处会拿到 resolverBuilder，就是从上一步 grpc.resolver.m 通过 grpc.ClientConn.target，格式为[scheme]://[authority]/endpoint，解析出 scheme 为"discovery" => grpc.resolver.Builder.Build => name/discovery Discovery.Build => name/discovery Discovery.serverproc(=>name/discovery Discovery.polls) && 创建了 name/discovery Resolver 对象(=>name/discovery Resolver.updateproc => name/discovery Resolver.nr 也就是 name/discovery Discovery.Fetch)
+client.Dial => warden.Dial => warden.dial => grpc.DialContext => grpc.newCCResolverWrapper
+
+此处会拿到 resolverBuilder
+
+就是从上一步 grpc.resolver.m 通过 grpc.ClientConn.target，格式为[scheme]://[authority]/endpoint
+
+解析出 scheme 为"discovery" => grpc.resolver.Builder.Build => name/discovery Discovery.Build => name/discovery Discovery.serverproc(=>name/discovery Discovery.polls) && 创建了 name/discovery Resolver 对象(=>name/discovery Resolver.updateproc => name/discovery Resolver.nr 也就是 name/discovery Discovery.Fetch)
 
 ```go
+// 返回的conn是*grpc.ClientConn
 conn, err := client.Dial(context.Background(), "discovery://default/"+"live.live.online-allliving")
 // 这里 client.Dial 调用
 
@@ -176,8 +183,19 @@ func (c *Client) dial(ctx context.Context, target string, opts ...grpc.DialOptio
 // 这里 grpc.DialContext 调用了grpc 官方库
 
 func DialContext(ctx context.Context, target string, opts ...DialOption) (conn *ClientConn, err error) {
+  ...
+  // Determine the resolver to use.
+  // 这里target就是[scheme]://[authority]/endpoint，后面通过name/discovery Discovery的实现grpc.resolver.Builder.Build方法获取字符串discovery，通过resolver包下Get方法获取到前面注册的name/discovery Discovery的实例
+	resolverBuilder, err := cc.parseTargetAndFindResolver()
+  ...
+  ...func (cc *ClientConn) parseTargetAndFindResolver() (resolver.Builder, error) {
+    		...
+    		rb = cc.getResolver(parsedTarget.URL.Scheme)
+    		...
+  	 }
 	...
   // Build the resolver.
+  // 将我们自己实现的Resolver（name/discovery Discovery）包裹进去，里面会调用我们实现的Build
 	rWrapper, err := newCCResolverWrapper(cc, resolverBuilder)
 	...
 }
@@ -185,6 +203,9 @@ func DialContext(ctx context.Context, target string, opts ...DialOption) (conn *
 
 func newCCResolverWrapper(cc *ClientConn, rb resolver.Builder) (*ccResolverWrapper, error) {
 	...
+  // 调用我们自己实现的Build方法
+  // 第二个参数cc ClientConn，不是最前面的conn，而是个interface，newCCResolverWrapper方法的返回值ccResolverWrapper实现了这个interface
+  // 返回值ccr.resolver是name/discovery Resolver实例
   ccr.resolver, err = rb.Build(cc.parsedTarget, ccr, rbo)
   ...
 }
@@ -250,3 +271,75 @@ type Resolver struct {
 name.Discovery.Resolver 实现了 name.Resolver
 
 所以 name.Discovery 调用 Build 方法可以创建 name.Discovery.Resolver
+
+## grpc 负载均衡
+
+要想实现自定义的Balancer的话，就必须要实现grpc.balancer.Builder接口
+
+```go
+// Builder creates a balancer.
+type Builder interface {
+	// Build creates a new balancer with the ClientConn.
+	Build(cc ClientConn, opts BuildOptions) Balancer
+	// Name returns the name of balancers built by this builder.
+	// It will be used to pick balancers (for example in service config).
+	Name() string
+}
+
+// Build方法返回的接口
+type Balancer interface {
+	// UpdateClientConnState is called by gRPC when the state of the ClientConn
+	// changes.  If the error returned is ErrBadResolverState, the ClientConn
+	// will begin calling ResolveNow on the active name resolver with
+	// exponential backoff until a subsequent call to UpdateClientConnState
+	// returns a nil error.  Any other errors are currently ignored.
+	UpdateClientConnState(ClientConnState) error
+	// ResolverError is called by gRPC when the name resolver reports an error.
+	ResolverError(error)
+	// UpdateSubConnState is called by gRPC when the state of a SubConn
+	// changes.
+	UpdateSubConnState(SubConn, SubConnState)
+	// Close closes the balancer. The balancer is not required to call
+	// ClientConn.RemoveSubConn for its existing SubConns.
+	Close()
+}
+
+// 第一个参数是interface
+// ClientConn represents a gRPC ClientConn.
+//
+// This interface is to be implemented by gRPC. Users should not need a
+// brand new implementation of this interface. For the situations like
+// testing, the new implementation should embed this interface. This allows
+// gRPC to add new methods to this interface.
+type ClientConn interface {
+	// NewSubConn is called by balancer to create a new SubConn.
+	// It doesn't block and wait for the connections to be established.
+	// Behaviors of the SubConn can be controlled by options.
+	NewSubConn([]resolver.Address, NewSubConnOptions) (SubConn, error)
+	// RemoveSubConn removes the SubConn from ClientConn.
+	// The SubConn will be shutdown.
+	RemoveSubConn(SubConn)
+	// UpdateAddresses updates the addresses used in the passed in SubConn.
+	// gRPC checks if the currently connected address is still in the new list.
+	// If so, the connection will be kept. Else, the connection will be
+	// gracefully closed, and a new connection will be created.
+	//
+	// This will trigger a state transition for the SubConn.
+	UpdateAddresses(SubConn, []resolver.Address)
+
+	// UpdateState notifies gRPC that the balancer's internal state has
+	// changed.
+	//
+	// gRPC will update the connectivity state of the ClientConn, and will call
+	// Pick on the new Picker to pick new SubConns.
+	UpdateState(State)
+
+	// ResolveNow is called by balancer to notify gRPC to do a name resolving.
+	ResolveNow(resolver.ResolveNowOptions)
+
+	// Target returns the dial target for this ClientConn.
+	//
+	// Deprecated: Use the Target field in the BuildOptions instead.
+	Target() string
+}
+```
