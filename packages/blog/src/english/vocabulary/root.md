@@ -336,3 +336,9 @@ involute 内卷的，复杂的
 involution 内卷；回旋
 
 revolution 革命，改革
+
+### surge- = to rise，升起
+
+resurge 复活
+
+surge 汹涌澎湃；猛冲

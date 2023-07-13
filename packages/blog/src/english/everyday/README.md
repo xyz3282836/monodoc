@@ -9,5 +9,4 @@ category: 英文
 <div class="catalog-display-container">
   <AutoCatalog base='/english/everyday/' />
 </div>
-
 <!-- markdownlint-enable MD033 -->
