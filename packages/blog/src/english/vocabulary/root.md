@@ -342,3 +342,19 @@ revolution 革命，改革
 resurge 复活
 
 surge 汹涌澎湃；猛冲
+
+### mand-，mend- = order，命令
+
+command 命令
+
+commend 委托，嘉奖
+
+demand 要求
+
+recommend 推荐，介绍
+
+mandate 命令
+
+### ment- = mind，思考，神智
+
+dement 使发狂
