@@ -9,7 +9,11 @@ tag:
 
 枚举很多常用的词根词缀
 
-### de- 从离开，从向下
+### de- 从离开，从向下，表没有，相反；另外由于离开，因而表示整个，表示加强
+
+加强的：depict 描写
+
+despite 轻视；prep 尽管（spic-，spect- = look，see，看）
 
 ### e- 从离开，从向外
 
@@ -41,7 +45,13 @@ surplus 过剩
 
 ### grav- = heavy 重
 
-### spect- = look，see，看（源自拉丁语 specere）
+### spic-，spect- = look，see，看（源自拉丁语 specere）
+
+aspect 方面
+
+inspect 检测
+
+despict 轻视；尽管
 
 ### scent- = climb 爬
 
@@ -122,6 +132,14 @@ surpass 超过，凌驾
 carbon 碳
 
 carbohydrate：碳水化合物
+
+### tempor- = time，age，season，表时间或者时间引起的现象
+
+temporary 暂时的，临时的
+
+contemporary 属于同一时期的
+
+temporize 拖延；妥协；迎合潮流
 
 ### hydr- = water 水，九头蛇海德拉（Hydra）
 
@@ -230,6 +248,12 @@ suspend 悬，吊，使悬浮
 suspense 悬疑，焦虑
 
 suspension 悬挂；暂停
+
+### sper-，spair = hope
+
+prosper 繁荣
+
+despair 绝望
 
 ### ministr- 部长，管理
 
@@ -354,6 +378,8 @@ demand 要求
 recommend 推荐，介绍
 
 mandate 命令
+
+mandatory 命令的；托管的
 
 ### ment- = mind，思考，神智
 
