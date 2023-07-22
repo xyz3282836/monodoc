@@ -157,11 +157,11 @@ type ClientParameters struct {
 }
 ```
 
-Time：**没有活动后的保活时间**，超过这个时间就会发ping给server；默认无穷大，最小10s，默认连接一直认为有效
+Time：**没有活动后的保活时间**，超过这个时间就会发ping给server；`默认无穷大，最小10s`，默认连接一直认为有效
 
-Timeout：**ping后等待时间**，超过就断开连接；默认20s
+Timeout：**ping后等待时间**，超过就断开连接；默认`20s`
 
-PermitWithoutStream：true，**连接在没活动时会定期发ping**，结合上面👆两个参数；默认为false
+PermitWithoutStream：true，**连接在没活动时会定期发ping**，结合上面👆两个参数；默认为`false`
 
 ### 服务端配置
 
@@ -191,23 +191,42 @@ type ServerParameters struct {
 }
 ```
 
-MaxConnectionIdle：**idle空闲连接的存活时间**，超过就发送GoAway帧（空闲连接的定义就是最近一次rpc调用之后的时间，或者连接刚刚建立作为起点计算没有rpc调用的维持时间）；默认无限大，默认连接无线存活
+MaxConnectionIdle：**idle空闲连接的存活时间**，超过就发送GoAway帧（空闲连接的定义就是最近一次rpc调用之后的时间，或者连接刚刚建立作为起点计算没有rpc调用的维持时间）；默认`无限大`，默认连接无线存活
 
-MaxConnectionAge：**连接的最大存活时间**，包括活跃连接和空闲连接，比上面👆应该要长点，超了要发送GoAway帧，并且防止同时关闭过多连接，加了随机扰动上下10%的时间；默认无线大，默认连接无线存活
+MaxConnectionAge：**连接的最大存活时间**，包括活跃连接和空闲连接，比上面👆应该要长点，超了要发送GoAway帧，并且防止同时关闭过多连接，加了随机扰动上下10%的时间；默认`无限大`，默认连接无线存活
 
 MaxConnectionAgeGrace：服务上面，到了时间但是会等待一段时间，来优雅关闭，主要为了有rpc的情况，让其顺利结束；默认无限大
 
-Time：**没有活动后的保活时间**，超过这个时间就会发ping给client；默认2小时，最小1s，默认只认为和客户端保活2小时
+Time：**没有活动后的保活时间**，超过这个时间就会发ping给client；默认2小时，最小1s，默认只认为和客户端保活`2小时`
 
-Timeout：**ping后等待时间**，超过就断开连接；默认20s
+Timeout：**ping后等待时间**，超过就断开连接；默认`20s`
 
 #### 服务端自我保护策略
 
-为了保护server端，限制客户端的ping的频率
+为了保护server端，限制客户端的ping的频率（等客户端4次ping来统计比较）
 
-MinTime：**客户端可以发送ping的最小间隔**；默认是5min
+MinTime：**客户端可以发送ping的最小间隔**；默认是`5min`；需要`等客户端4次ping`，来比较MinTime，不符合就发送GoAway帧
 
-PermitWithoutStream：true，允许没有rpc调用时client发送ping；默认不允许，如果空间时间客户端发ping，那么server会发送GoAway帧来关闭连接
+PermitWithoutStream：true，允许没有rpc调用时client发送ping；默认`false`不允许，如果空间时间客户端发ping，那么server会发送GoAway帧来关闭连接；false状态下，需要`等客户端4次ping`，才会发送GoAway帧
+
+```sh
+2023/07/22 12:41:43 http2: Framer 0x14000198000: wrote SETTINGS len=0
+2023/07/22 12:41:43 http2: Framer 0x14000198000: read SETTINGS len=6, settings: MAX_FRAME_SIZE=16384
+2023/07/22 12:41:43 http2: Framer 0x14000198000: wrote SETTINGS flags=ACK len=0
+2023/07/22 12:41:43 http2: Framer 0x14000198000: read SETTINGS flags=ACK len=0
+2023/07/22 12:42:16 http2: Framer 0x14000198000: wrote PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:42:16 http2: Framer 0x14000198000: read PING flags=ACK len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:42:49 http2: Framer 0x14000198000: wrote PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:42:49 http2: Framer 0x14000198000: read PING flags=ACK len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:43:22 http2: Framer 0x14000198000: wrote PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:43:22 http2: Framer 0x14000198000: read PING flags=ACK len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:43:55 http2: Framer 0x14000198000: wrote PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:43:55 http2: Framer 0x14000198000: read PING flags=ACK len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x00"
+2023/07/22 12:43:55 http2: Framer 0x14000198000: read GOAWAY len=22 LastStreamID=0 ErrCode=ENHANCE_YOUR_CALM Debug="too_many_pings"
+2023/07/22 12:43:55 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII "too_many_pings".
+```
+
+43秒开始，16第一次ping，49第二次ping，22第三次ping，55第四次ping，同时发送GoAway帧
 
 ```go
 // EnforcementPolicy is used to set keepalive enforcement policy on the
@@ -224,122 +243,22 @@ type EnforcementPolicy struct {
 }
 ```
 
-demo
-
-```go
-package main
-
-import (
-	"context"
-	"flag"
-	"fmt"
-	"log"
-	"net"
-	"time"
-
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/keepalive"
-
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-)
-
-var port = flag.Int("port", 50052, "port number")
-
-var kaep = keepalive.EnforcementPolicy{
-	MinTime:             5 * time.Second, // If a client pings more than once every 5 seconds, terminate the connection
-	PermitWithoutStream: true,            // Allow pings even when there are no active streams
-}
-
-var kasp = keepalive.ServerParameters{
-	MaxConnectionIdle:     15 * time.Second, // If a client is idle for 15 seconds, send a GOAWAY
-	MaxConnectionAge:      30 * time.Second, // If any connection is alive for more than 30 seconds, send a GOAWAY
-	MaxConnectionAgeGrace: 5 * time.Second,  // Allow 5 seconds for pending RPCs to complete before forcibly closing connections
-	Time:                  5 * time.Second,  // Ping the client if it is idle for 5 seconds to ensure the connection is still active
-	Timeout:               1 * time.Second,  // Wait 1 second for the ping ack before assuming the connection is dead
-}
-
-// server implements EchoServer.
-type server struct {
-	pb.UnimplementedEchoServer
-}
-
-func (s *server) UnaryEcho(ctx context.Context, req *pb.EchoRequest) (*pb.EchoResponse, error) {
-	return &pb.EchoResponse{Message: req.Message}, nil
-}
-
-func main() {
-	flag.Parse()
-
-	address := fmt.Sprintf(":%v", *port)
-	lis, err := net.Listen("tcp", address)
-	if err != nil {
-		log.Fatalf("failed to listen: %v", err)
-	}
-
-	s := grpc.NewServer(grpc.KeepaliveEnforcementPolicy(kaep), grpc.KeepaliveParams(kasp))
-	pb.RegisterEchoServer(s, &server{})
-
-	if err := s.Serve(lis); err != nil {
-		log.Fatalf("failed to serve: %v", err)
-	}
-}
-```
-
-```go
-package main
-
-import (
-	"context"
-	"flag"
-	"fmt"
-	"log"
-	"time"
-
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	pb "google.golang.org/grpc/examples/features/proto/echo"
-	"google.golang.org/grpc/keepalive"
-)
-
-var addr = flag.String("addr", "localhost:50052", "the address to connect to")
-
-var kacp = keepalive.ClientParameters{
-	Time:                10 * time.Second, // send pings every 10 seconds if there is no activity
-	Timeout:             time.Second,      // wait 1 second for ping ack before considering the connection dead
-	PermitWithoutStream: true,             // send pings even without active streams
-}
-
-func main() {
-	flag.Parse()
-
-	conn, err := grpc.Dial(*addr, grpc.WithTransportCredentials(insecure.NewCredentials()), grpc.WithKeepaliveParams(kacp))
-	if err != nil {
-		log.Fatalf("did not connect: %v", err)
-	}
-	defer conn.Close()
-
-	c := pb.NewEchoClient(conn)
-
-	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Minute)
-	defer cancel()
-	fmt.Println("Performing unary request")
-	res, err := c.UnaryEcho(ctx, &pb.EchoRequest{Message: "keepalive demo"})
-	if err != nil {
-		log.Fatalf("unexpected error from UnaryEcho: %v", err)
-	}
-	fmt.Println("RPC response:", res)
-	select {} // Block forever; run with GODEBUG=http2debug=2 to observe ping frames and GOAWAYs due to idleness.
-}
-```
+demo代码演示：https://github.com/xyz3282836/grpcdemo/tree/master/libtest
 
 可以开启GODEBUG
 
+```sh
+export GODEBUG=http2client=0  # disable HTTP/2 client support
+export GODEBUG=http2server=0  # disable HTTP/2 server support
+export GODEBUG=http2debug=1   # enable verbose HTTP/2 debug logs
+export GODEBUG=http2debug=2   # ... even more verbose, with frame dumps
 ```
-	GODEBUG=http2client=0  # disable HTTP/2 client support
-	GODEBUG=http2server=0  # disable HTTP/2 server support
-	GODEBUG=http2debug=1   # enable verbose HTTP/2 debug logs
-	GODEBUG=http2debug=2   # ... even more verbose, with frame dumps
-```
+
+一次普通请求
+
+左边client，右边server
+
+![image-20230722013545566](./assets/image-20230722013545566.png)
 
 ## reference
 
