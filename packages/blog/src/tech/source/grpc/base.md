@@ -53,8 +53,8 @@ type ClientConn interface {
 
 `resolver.go`内实现了 gRPC官方的`resolver.Builder`和`resolver.Resolver`接口，但也暴露了`naming.go`内的`naming.Builder`和`naming.Resolver`接口
 
-- Resolver实现了gRPC官方`resolver.Resolver`接口，并且包含了naming包下新的Resolver interface
-- Builder实现了gRPC官方`resolver.Builder`接口，并且new可以传入naming包下新的Builder interface
+- **Resolver实现了gRPC官方`resolver.Resolver`接口，并且包含了naming包下新的Resolver interface**
+- **Builder实现了gRPC官方`resolver.Builder`接口，并且new可以传入naming包下新的Builder interface**
 
 ```go
 // warden/resolver/resolver.go
@@ -123,8 +123,8 @@ type Resolver interface {
 
 discovery是naming.go中Builder和Resolver的具体的一种实现，有其他实现
 
-- Discovery实现了naming下的Builder和Registry接口
-- Resolver实现了naming下的Resolver接口
+- **Discovery实现了naming下的Builder和Registry接口**
+- **Resolver实现了naming下的Resolver接口**
 
 ```go
 // library/naming/discovery/discovery.go
