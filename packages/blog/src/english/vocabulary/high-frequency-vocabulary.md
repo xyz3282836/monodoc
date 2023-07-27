@@ -182,3 +182,7 @@ inherent 固有的，原有的
 withstand 承受
 
 flexible 灵活的；能变形的
+
+sohpistication 复杂度（诡辩，老于事故的）
+
+pioneer 先锋；拓荒者；先驱
