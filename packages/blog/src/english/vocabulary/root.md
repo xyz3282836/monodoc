@@ -97,6 +97,12 @@ duct n. 管道，导体；vt. 通过管道传输
 
 conduct，指导，指挥；传导；induct，指引，使入门；subduct，减去，拿掉
 
+### gran-，grain- = grain，颗粒
+
+grain 谷粒；颗粒
+
+granular 颗粒的
+
 ### tract- = draw 拉
 
 attract：吸引
