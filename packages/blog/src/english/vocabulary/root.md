@@ -363,6 +363,14 @@ fierce 凶猛的
 
 engross 独占；使全神贯注
 
+### lex-，lexic- = word，speech，词汇
+
+lexical 字典的
+
+lexicon 词汇
+
+lexicology 词汇学
+
 ### merch- = trade，交易
 
 mercantile 商业的；商人的
@@ -414,3 +422,15 @@ vice-chairman 副主席
 vice-governor 副州长
 
 vice- president 副总裁
+
+### vit-，vive- = life，生命
+
+revive 使复苏
+
+survive 幸存
+
+vital 生命的
+
+vivid 生动的
+
+vivify 使生动

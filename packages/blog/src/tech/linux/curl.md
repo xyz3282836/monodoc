@@ -9,6 +9,6 @@ tag:
 
 指定ip host用法
 
-```
-curl --resolv www.ruizhou.cf:443:174.137.58.249 https://www.ruizhou.cf
+```bash
+curl --resolv www.ruizhou.cf:443:104.128.93.139 https://www.ruizhou.cf
 ```
