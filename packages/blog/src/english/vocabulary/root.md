@@ -271,6 +271,12 @@ retain 保持
 
 sustain 支撑，忍受，承受
 
+### tend- = stretch，伸展
+
+contend 奋斗，竞争
+
+contender 竞争者
+
 ### pens- = hang，悬挂
 
 suspend 悬，吊，使悬浮

@@ -89,14 +89,14 @@ ever 任何时候；曾经
 | grain 颗粒；谷粒                                     | granular 颗粒的（granularity 间隔；-ular） | incorporate 合并                                        |
 | groundbreaking 开创性的                              | extrapolate 推断（pol- = drive，push 推）  | overwhelm 淹没；压倒                                    |
 | placebo 安慰                                         | bias 偏见                                  | de fact 事实上                                          |
-| venture 冒险                                         | avenue 途径                                |                                                         |
+| venture 冒险                                         | avenue 途径；大道                          |                                                         |
 | tremendous 巨大的                                    | bounce 反弹                                | resile 有弹力（resilience 弹性）                        |
 | tier 层级                                            | deviation 背离                             | generic 一般的                                          |
 | dimension 维度                                       | annotate 注释                              | narrow 变狭窄                                           |
 | manipulate 操纵                                      | simulate 模拟                              | tune 调整                                               |
 | concurrence 并发                                     | shed 除去（load shedding 减载）            | modular 模块化                                          |
 | compromise 妥协                                      | seamless 无缝的                            | harmony 协调                                            |
-|                                                      |                                            |                                                         |
+| embark 从事                                          | velocity 速度；迅速                        |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
