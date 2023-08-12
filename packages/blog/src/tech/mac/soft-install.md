@@ -12,8 +12,16 @@ tag:
 
 ### 软件安装
 
+允许任何安装源
+
 ```sh
 sudo spctl --master-disable
+```
+
+打开时提示：xxx.app已损坏，无法打开，您应该将它移到废纸篓，需要给文件赋予安全性设置
+
+```sh
+sudo xattr -d com.apple.quarantine /Applications/Sublime\ Text.app
 ```
 
 ### 证书过期
