@@ -1,6 +1,6 @@
 ---
 title: "机器学习基础"
-date: 2023-05-25 15:10:00 +8
+date: 2023-08-12 12:30:00 +8
 category: Machine Learning
 tag:
   - math
