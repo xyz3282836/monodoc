@@ -1,26 +1,38 @@
-## 灵魂拷问
+---
+​---
+title: "混沌工程"
+date: 2023-07-22 10:24:00 +8
+category: engineer
+tag:
+  - Netflix
+  - chaos
+  - engineer
+​---
+---
+
+### 灵魂拷问
 
 How much confidence we can have in the complex systems that we put into production?
 
-## 系统的弱点
+### 系统的弱点
 
 1. improper fallback settings when a service is unavailable 服务不可用
 2. retry storms from improperly tuned timeouts 超时不对，重试风暴
 3. outages when a downstream dependency receives too much traffic 依赖不可用导致中断
 4. cascading failures when a single point of failure crashes 单点不可用后大量失败
 
-## 混动工程的由来
+### 混动工程的由来
 
 An empirical, systems-based approach addresses the chaos in distributed systems at scale and builds confidence in the ability of those systems to withstand realistic conditions. We learn about the behavior of a distributed system by observing it during a controlled experiment. We call this Chaos Engineering. 需要一个系统工程去承载（经验主义）
 
-## 混沌工程的实践
+### 混沌工程的实践
 
 1. Start by defining ‘steady state’ as some measurable output of a system that indicates normal behavior. 定义可以测量的稳态
 2. Hypothesize that this steady state will continue in both the control group and the experimental group. 稳态要求
 3. Introduce variables that reflect real world events like servers that crash, hard drives that malfunction, network connections that are severed, etc. 引入不同现实发生的事件
 4. Try to disprove the hypothesis by looking for a difference in steady state between the control group and the experimental group. 寻稳态在实验的差异来推翻假设
 
-## 高介原则
+### 高介原则
 
 1. Build a Hypothesis around Steady State Behavior 围绕稳定指标的行为做假设建设
 
