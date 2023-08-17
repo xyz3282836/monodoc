@@ -47,15 +47,16 @@ cybersecurity 网络安全
 
 ## 动作
 
-|              |               |             |
-| ------------ | ------------- | ----------- |
-| punch 打     | beat 连续打   | flick 弹    |
-| slap 扇      | scratch 抓    | knock 敲    |
-| pinch 捏，拧 | pet 抚摸      | pat 轻拍    |
-| grab 抓      | hold 握       | lift 举     |
-| drop 掉落    | push 推       | pull 拉     |
-| touch 触摸   | poke 戳       | tickle 胳肢 |
-| point 指     | rock 轻轻摇晃 | cuddle 拥抱 |
+|                           |                                                                              |                                                        |
+| ------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------ |
+| punch 打                  | beat 连续打                                                                  | flick 弹                                               |
+| slap 扇                   | scratch 抓                                                                   | knock 敲                                               |
+| slam 猛摔用力将门窗等关闭 | creak 木头、门、地板等因摩擦<br />而发出尖锐、刺耳的声音<br />嘎吱嘎吱的声音 | rip 用力将物体撕开、扯裂或破坏<br />强行剥夺或夺走某物 |
+| pinch 捏，拧              | pet 抚摸                                                                     | pat 轻拍                                               |
+| grab 抓                   | hold 握                                                                      | lift 举                                                |
+| drop 掉落                 | push 推                                                                      | pull 拉                                                |
+| touch 触摸                | poke 戳                                                                      | tickle 胳肢                                            |
+| point 指                  | rock 轻轻摇晃                                                                | cuddle 拥抱                                            |
 
 ## 副词
 

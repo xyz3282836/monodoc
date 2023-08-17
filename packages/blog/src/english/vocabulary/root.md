@@ -27,6 +27,22 @@ ardor 热情，热忱
 
 arson 纵火
 
+### charg- = to load，装载，词源来自于car- 车
+
+charge 指控；费用；电荷；承担
+
+overcharge 过度充电；超载
+
+recharge 再充电；再控告
+
+surcharge 追加罚款
+
+undercharge 低的索价
+
+uncharge 宣告无罪
+
+discharge 解雇；**离开**；放电；退伍
+
 ### de- 从离开，从向下，表没有，相反；另外由于离开，因而表示整个，表示加强
 
 加强的：depict 描写
@@ -420,6 +436,18 @@ mandatory 命令的；托管的
 ### ment- = mind，思考，神智
 
 dement 使发狂
+
+### vast- = empty，空
+
+devastate 毁坏
+
+evacuate 疏散；排泄
+
+evacuant 排泄的
+
+vacuity 空虚；无意义的事
+
+vacant 空的；空白的
 
 ### vice- 副；代理
 

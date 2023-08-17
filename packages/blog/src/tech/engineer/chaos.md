@@ -48,3 +48,7 @@ An empirical, systems-based approach addresses the chaos in distributed systems 
 
 5. Minimize Blast Radius 最小爆炸半径
    While there must be an allowance for some short-term negative impact, it is the responsibility and obligation of the Chaos Engineer to ensure the fallout from experiments are minimized and contained. 必须要有小范围的负面影响的容忍，混动工程有责任确保影响最小化和可控化
+
+## reference
+
+https://principlesofchaos.org/
