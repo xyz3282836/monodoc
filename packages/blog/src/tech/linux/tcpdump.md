@@ -52,7 +52,7 @@ less 10 抓取小于 10 字节的包
 
 greater 100 抓取大于 100 字节的包
 
-![](./../img/tcpdump.png)
+![](./assets/tcpdump.png)
 
 tcpdump src port https -nn -Q out
 
@@ -64,4 +64,4 @@ tcpdump dst port https -nn -Q in
 
 #### 参数
 
-![tcpdump 常用过滤表达式类](./../img/tcpdump-param.jpg)
+![tcpdump 常用过滤表达式类](./assets/tcpdump-param.jpg)
