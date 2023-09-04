@@ -93,6 +93,16 @@ predict：预言
 
 dedicate：贡献
 
+### dig- 挖，刺
+
+dig 挖
+
+digging n. 挖掘
+
+dike 筑堤防护
+
+digger 挖掘者
+
 ### dom- =hourse，家
 
 domain
@@ -198,12 +208,6 @@ detract：减去，贬低；转移，分散
 ### tir- = draw 拉
 
 retire 退休
-
-### vestig- = foot print，track，脚印，踪迹
-
-investigate 调查
-
-vestige 痕迹；遗迹；残余
 
 ### seism-，seismo- = earthquake，地震，来自希腊语 seismos/seiein 地震，晃动
 
@@ -345,16 +349,6 @@ minister 部长，牧师
 
 administer 管理员
 
-### dig- 挖，刺
-
-dig 挖
-
-digging n. 挖掘
-
-dike 筑堤防护
-
-digger 挖掘者
-
 ### sume- = take，拿，取
 
 assume 假装；承担（完全不确定）
@@ -443,6 +437,12 @@ involution 内卷；回旋
 
 revolution 革命，改革
 
+### radic- = root，根
+
+eradicate 根除
+
+radical 根本的；基本的
+
 ### surge- = to rise，升起
 
 resurge 复活
@@ -478,6 +478,36 @@ evacuant 排泄的
 vacuity 空虚；无意义的事
 
 vacant 空的；空白的
+
+### vestig- = foot print，track，脚印，踪迹
+
+investigate 调查
+
+vestige 痕迹；遗迹；残余
+
+### ven，vent- = come，来
+
+advent 来到，来临
+
+convent 女修道会
+
+convene 集合；召集
+
+event 事件
+
+invent 发明；创作
+
+prevent 阻止；妨碍
+
+venture 冒险
+
+avenue 大街
+
+revenue 收益
+
+supervene 意外发生
+
+venue 犯罪地点
 
 ### vice- 副；代理
 
