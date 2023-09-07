@@ -45,6 +45,14 @@ carbon 碳
 
 carbohydrate：碳水化合物
 
+### camp- = field，田野
+
+camp 露营
+
+campaign 竞选运动；作战
+
+campsite 营地
+
 ### charg- = to load，装载，词源来自于car- 车
 
 charge 指控；费用；电荷；承担
