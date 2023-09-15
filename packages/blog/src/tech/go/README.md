@@ -1,7 +1,7 @@
 ---
-title: golang 语言
+title: Go
 icon: go
-category: Go
+category: go
 tag:
   - tip
 ---

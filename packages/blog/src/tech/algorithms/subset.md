@@ -1,3 +1,12 @@
+---
+title: "subset"
+date: 2023-07-04 22:22:00 +8
+category: algorithm
+tag:
+  - average
+  - subset
+---
+
 ## deterministic subsetting
 
 ```go
