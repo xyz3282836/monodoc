@@ -53,6 +53,14 @@ campaign 竞选运动；作战
 
 campsite 营地
 
+### cast = to throw，投
+
+broadcast 广播
+
+cast 投掷；演员阵容
+
+forecast 预测
+
 ### charg- = to load，装载，词源来自于car- 车
 
 charge 指控；费用；电荷；承担
@@ -368,6 +376,14 @@ resume 恢复
 subsume 把..归类
 
 presume 假定，推测（几乎确定）
+
+### sper- = hope，希望
+
+despair 绝望
+
+desperate 令人绝望的；不顾一切的
+
+prosper 繁荣
 
 ### maj-，may-，magn-，max- = great，大，伟大
 
