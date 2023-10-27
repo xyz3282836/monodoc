@@ -283,6 +283,12 @@ assemble 集合（as- 不断，朝着）
 
 dissemble 掩饰，假装不知道
 
+### sphere = globe，球
+
+biosphere 生物圈
+
+atmosphere 大气层
+
 ### sult- 闷热
 
 sultry 闷热的
@@ -350,6 +356,14 @@ suspend 悬，吊，使悬浮
 suspense 悬疑，焦虑
 
 suspension 悬挂；暂停
+
+### scribe- = write，写
+
+subscribe 订阅（下面 + 写）
+
+transcribe 抄写，转录（跨越 + 写）
+
+describe 描述（向下 + 写）
 
 ### sper-，spair = hope
 
