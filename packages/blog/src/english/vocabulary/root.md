@@ -61,6 +61,16 @@ cast 投掷；演员阵容
 
 forecast 预测
 
+### celebr-
+
+celebrant 主持仪式的人；教父
+
+celebrate 庆祝，祝贺
+
+celebratory 庆祝的
+
+celebrity 名声；名人
+
 ### charg- = to load，装载，词源来自于car- 车
 
 charge 指控；费用；电荷；承担
@@ -118,6 +128,12 @@ digging n. 挖掘
 dike 筑堤防护
 
 digger 挖掘者
+
+### dom-，domin-，tam- = house，屋，家，控制
+
+condominium 共同统治
+
+dimain 领域，领土
 
 ### dom- =hourse，家
 
@@ -277,6 +293,10 @@ extract 榨取；摘录
 
 subtract 减法
 
+### ornitho- = bird，鸟
+
+ornithology 鸟类学
+
 ### semble- = alike，same，相似的，一样的
 
 assemble 集合（as- 不断，朝着）
@@ -416,22 +436,6 @@ undermine 往下挖，渐渐破坏
 mining 采矿
 
 mineral 矿物；矿物的
-
-### dom-，domin-，tam- = house，屋，家，控制
-
-condominium 共同统治
-
-dimain 领域，领土
-
-### celebr-
-
-celebrant 主持仪式的人；教父
-
-celebrate 庆祝，祝贺
-
-celebratory 庆祝的
-
-celebrity 名声；名人
 
 ### fer-，fero- = wild，野
 

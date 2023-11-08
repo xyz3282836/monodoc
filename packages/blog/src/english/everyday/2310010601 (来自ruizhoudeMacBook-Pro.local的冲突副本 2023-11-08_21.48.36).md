@@ -40,10 +40,28 @@ shrink 收缩；萎缩
 
 shuffle 洗牌；随机播放；搅动
 
-fancy 想象力
+moniker 绰号
 
-fanciful 奇怪的；想象的
+plume 羽毛
 
-spell 除了拼写；还有替换的意思
+plumage 鸟类羽毛
+
+character 个性；字符；性质；品格；特征
+
+characteristic 特征（前面发音 carry）
+
+prioritize 优秀考虑（pri，oritize，发音）
+
+supremacy 至高无上的
+
+supremacist 至上主义者
+
+robber 强盗
+
+rob 抢劫
+
+indigenous 贫困的人
+
+grave 坟墓
 
 :::
