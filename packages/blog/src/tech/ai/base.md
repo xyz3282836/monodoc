@@ -9,6 +9,6 @@ tag:
 
 ## PPT
 
-![CleanShot 2023-10-24 at 14.57.38](./assets/CleanShot 2023-10-24 at 14.57.38.png)
+![CleanShot 2023-10-24 at 14.57.38](./assets/2023-10-24-14.57.38.png)
 
-![CleanShot 2023-10-24 at 14.59.29](./assets/CleanShot 2023-10-24 at 14.59.29.png)
+![CleanShot 2023-10-24 at 14.59.29](./assets/2023-10-24-14.59.29.png)
