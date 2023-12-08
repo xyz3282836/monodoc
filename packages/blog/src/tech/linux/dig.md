@@ -10,7 +10,7 @@ tag:
 Using dig +trace to Understand DNS Resolution from Start to Finish
 
 ```bash
-➜  ~ dig www.ruizhou.cf
+➜  ~ dig www.ruizhou.xyz
 
 ; <<>> DiG 9.10.6 <<>> www.ruizhou.cf
 ;; global options: +cmd

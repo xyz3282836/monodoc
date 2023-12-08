@@ -97,9 +97,9 @@ ever 任何时候；曾经
 | manipulate 操纵                                      | simulate 模拟                              | tune 调整                                               |
 | concurrence 并发                                     | shed 除去（load shedding 减载）            | modular 模块化                                          |
 | compromise 妥协                                      | seamless 无缝的                            | harmony 协调                                            |
-| embark 从事                                          | velocity 速度；迅速                        |                                                         |
-|                                                      |                                            |                                                         |
-|                                                      |                                            |                                                         |
+| embark 从事                                          | velocity 速度；迅速                        | monolith 巨石                                           |
+| comprise 包含，构成                                  | modularity 模块化                          | orient 东方，东方诸国；以...为方向，面向                |
+| enormous 巨大的                                      | utilize 利用                               | precede 优于；前面                                      |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
