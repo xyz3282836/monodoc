@@ -65,7 +65,6 @@ export default hopeTheme({
     components: {
       components: [
         "ArtPlayer",
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
@@ -73,8 +72,7 @@ export default hopeTheme({
         "Replit",
         "SiteInfo",
         "StackBlitz",
-        "VideoPlayer",
-        "YouTube",
+        "VidStack",
       ],
     },
 
@@ -114,7 +112,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      // presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
@@ -135,6 +133,20 @@ export default hopeTheme({
       vuePlayground: true,
     },
 
-    searchPro: true,
+    searchPro: {
+      // 索引全部内容
+      indexContent: true,
+      // 为分类和标签添加索引
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.category,
+          formatter: "分类：$content",
+        },
+        {
+          getter: (page) => page.frontmatter.tag,
+          formatter: "标签：$content",
+        },
+      ],
+    },
   },
 });
