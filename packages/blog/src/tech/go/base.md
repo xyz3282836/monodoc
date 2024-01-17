@@ -195,3 +195,41 @@ func deal(im interface{}) {
 }
 
 ```
+
+## defer
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("c return:", *(c())) // 打印结果为 c return: 2
+}
+
+func c() *int {
+	var i int
+	defer func() {
+		i++
+		fmt.Println("c defer2:", i) // 打印结果为 c defer: 2
+	}()
+
+	defer func() {
+		i++
+		fmt.Println("c defer1:", i) // 打印结果为 c defer: 1
+	}()
+	fmt.Println("c exec :", i)
+	return &i
+}
+```
+
+Output:
+
+```sh
+c exec : 0
+c defer1: 1
+c defer2: 2
+c return: 2
+```

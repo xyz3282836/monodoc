@@ -12,3 +12,5 @@ sticky: 4
 </div>
 
 <!-- markdownlint-enable MD033 -->
+
+遍历树，处理递归，还可以循环替换原来变量的方式

@@ -17,32 +17,32 @@
     "packages:update": "pnpm up -r"
   },
   "dependencies": {
-    "@vue/repl": "^3.0.0",
+    "@vue/repl": "^3.3.0",
     "@vuepress/cli": "2.0.0-rc.0",
     "@vuepress/client": "2.0.0-rc.0",
-    "artplayer": "5.0.9",
+    "artplayer": "5.1.1",
     "artplayer-plugin-danmuku": "5.0.1",
     "chart.js": "^4.4.1",
-    "dashjs": "^4.7.2",
+    "dashjs": "^4.7.3",
     "echarts": "^5.4.3",
-    "flowchart.ts": "^2.0.0",
-    "hls.js": "^1.4.13",
+    "flowchart.ts": "^3.0.0",
+    "hls.js": "^1.5.1",
     "katex": "^0.16.9",
-    "mermaid": "^10.6.1",
+    "mermaid": "^10.7.0",
     "mpegts.js": "^1.7.3",
     "plyr": "^3.7.8",
-    "reveal.js": "^5.0.2",
-    "sass-loader": "13.3.2",
+    "reveal.js": "^5.0.4",
+    "sass-loader": "14.0.0",
     "vidstack": "1.8.3",
-    "vue": "^3.3.10",
-    "vuepress-plugin-search-pro": "2.0.0-rc.2",
-    "vuepress-theme-hope": "2.0.0-rc.2",
+    "vue": "^3.4.14",
+    "vuepress-plugin-search-pro": "2.0.0-rc.11",
+    "vuepress-theme-hope": "2.0.0-rc.11",
     "vuepress-vite": "2.0.0-rc.0",
     "vuepress-webpack": "2.0.0-rc.0"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "markdownlint-cli": "0.37.0",
-    "prettier": "3.1.0"
+    "markdownlint-cli": "0.38.0",
+    "prettier": "3.2.3"
   }
 }
