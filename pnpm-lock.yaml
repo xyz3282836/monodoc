@@ -62,12 +62,9 @@ importers:
       vue:
         specifier: ^3.4.14
         version: 3.4.14
-      vuepress-plugin-search-pro:
-        specifier: 2.0.0-rc.11
-        version: 2.0.0-rc.11(sass-loader@14.0.0)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.11
-        version: 2.0.0-rc.11(@vue/repl@3.3.0)(artplayer@5.1.1)(chart.js@4.4.1)(echarts@5.4.3)(flowchart.ts@3.0.0)(hls.js@1.5.1)(katex@0.16.9)(markdown-it@13.0.2)(mermaid@10.7.0)(mpegts.js@1.7.3)(plyr@3.7.8)(reveal.js@5.0.4)(sass-loader@14.0.0)(vidstack@1.8.3)(vuepress-plugin-search-pro@2.0.0-rc.11)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
+        version: 2.0.0-rc.11(@vue/repl@3.3.0)(artplayer@5.1.1)(chart.js@4.4.1)(echarts@5.4.3)(flowchart.ts@3.0.0)(hls.js@1.5.1)(katex@0.16.9)(markdown-it@13.0.2)(mermaid@10.7.0)(mpegts.js@1.7.3)(plyr@3.7.8)(reveal.js@5.0.4)(sass-loader@14.0.0)(vidstack@1.8.3)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-vite:
         specifier: 2.0.0-rc.0
         version: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@14.0.0)(vue@3.4.14)
@@ -6367,11 +6364,6 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /slimsearch@2.0.0:
-    resolution: {integrity: sha512-+G9FHWeVkwOTbEyhFIWvCz1T2fQusbn9756KhttfLygAcdjDOy1hpcPtWjnH4V9lp4qRElbvRqefOnlf/R0OAg==}
-    engines: {node: '>=18'}
-    dev: false
-
   /sockjs@0.3.24:
     resolution: {integrity: sha512-GJgLTZ7vYb/JtPSSZ10hsOYIvEYsjbNU+zPdIHcUaWVNUEPivzxku31865sSSud0Da0W4lEeOPlmw93zLQchuQ==}
     dependencies:
@@ -7390,44 +7382,6 @@ packages:
       - typescript
     dev: false
 
-  /vuepress-plugin-search-pro@2.0.0-rc.11(sass-loader@14.0.0)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0):
-    resolution: {integrity: sha512-9CdmHV1KiT8bRbyEtQA9GS84tuKjrgQH3Wdw1ks7RhZpEDMgRqZKx1cV9GT0f0aDVggrUViZHD5pY6/7JLorPg==}
-    engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
-    peerDependencies:
-      sass-loader: ^13.3.0
-      vuepress: 2.0.0-rc.0
-      vuepress-vite: 2.0.0-rc.0
-      vuepress-webpack: 2.0.0-rc.0
-    peerDependenciesMeta:
-      sass-loader:
-        optional: true
-      vuepress:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@vuepress/client': 2.0.0-rc.0
-      '@vuepress/shared': 2.0.0-rc.0
-      '@vuepress/utils': 2.0.0-rc.0
-      '@vueuse/core': 10.7.2(vue@3.4.14)
-      cheerio: 1.0.0-rc.12
-      chokidar: 3.5.3
-      sass-loader: 14.0.0(webpack@5.89.0)
-      slimsearch: 2.0.0
-      vue: 3.4.14
-      vue-router: 4.2.5(vue@3.4.14)
-      vuepress-plugin-sass-palette: 2.0.0-rc.11(sass-loader@14.0.0)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
-      vuepress-shared: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
-      vuepress-vite: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(sass-loader@14.0.0)(vue@3.4.14)
-      vuepress-webpack: 2.0.0-rc.0(vue@3.4.14)(webpack@5.89.0)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-      - typescript
-    dev: false
-
   /vuepress-plugin-seo2@2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0):
     resolution: {integrity: sha512-Cf5wabvruMYzytwrj+UcXYjsyq/HliZUJ4BwkoyYiz4Jt48pLEQOi1iqxwLnUR0653EPqA9yrmt1uX4kSuBdrQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
@@ -7517,7 +7471,7 @@ packages:
       - typescript
     dev: false
 
-  /vuepress-theme-hope@2.0.0-rc.11(@vue/repl@3.3.0)(artplayer@5.1.1)(chart.js@4.4.1)(echarts@5.4.3)(flowchart.ts@3.0.0)(hls.js@1.5.1)(katex@0.16.9)(markdown-it@13.0.2)(mermaid@10.7.0)(mpegts.js@1.7.3)(plyr@3.7.8)(reveal.js@5.0.4)(sass-loader@14.0.0)(vidstack@1.8.3)(vuepress-plugin-search-pro@2.0.0-rc.11)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0):
+  /vuepress-theme-hope@2.0.0-rc.11(@vue/repl@3.3.0)(artplayer@5.1.1)(chart.js@4.4.1)(echarts@5.4.3)(flowchart.ts@3.0.0)(hls.js@1.5.1)(katex@0.16.9)(markdown-it@13.0.2)(mermaid@10.7.0)(mpegts.js@1.7.3)(plyr@3.7.8)(reveal.js@5.0.4)(sass-loader@14.0.0)(vidstack@1.8.3)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0):
     resolution: {integrity: sha512-BQCobcJ5wM8BDjd53Y24acxrk0Z0nkbNIdYrf1GDsDgMCEB3pD20zwHKOA8NtovZkya7AA6DHhK3XY6bvd2Rlg==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -7587,7 +7541,6 @@ packages:
       vuepress-plugin-reading-time2: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-plugin-rtl: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-plugin-sass-palette: 2.0.0-rc.11(sass-loader@14.0.0)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
-      vuepress-plugin-search-pro: 2.0.0-rc.11(sass-loader@14.0.0)(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-plugin-seo2: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-plugin-sitemap2: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)
       vuepress-shared: 2.0.0-rc.11(vuepress-vite@2.0.0-rc.0)(vuepress-webpack@2.0.0-rc.0)

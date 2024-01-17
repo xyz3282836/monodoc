@@ -35,7 +35,6 @@
     "sass-loader": "14.0.0",
     "vidstack": "1.8.3",
     "vue": "^3.4.14",
-    "vuepress-plugin-search-pro": "2.0.0-rc.11",
     "vuepress-theme-hope": "2.0.0-rc.11",
     "vuepress-vite": "2.0.0-rc.0",
     "vuepress-webpack": "2.0.0-rc.0"

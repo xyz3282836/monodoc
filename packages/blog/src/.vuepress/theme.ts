@@ -134,5 +134,7 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
+
+    searchPro: true,
   },
 });
