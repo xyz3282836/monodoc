@@ -3,6 +3,12 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/",
   {
+    text: "AI",
+    icon: "people",
+    prefix: "/ai/",
+    link: "/ai/",
+  },
+  {
     text: "英文",
     icon: "note",
     prefix: "/english/",
