@@ -16,7 +16,7 @@ sticky: 9
 
 :::
 
-- [语法](gramma.md)
+- [语法](grammar.md)
 
 ## 词汇
 
