@@ -94,7 +94,7 @@ interface Document
   addEventListener(
     type: string,
     listener: (ev: MouseEvent) => any,
-    useCapture?: boolean
+    useCapture?: boolean,
   ): void;
 }
 ```

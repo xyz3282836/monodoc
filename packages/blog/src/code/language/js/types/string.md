@@ -10,15 +10,15 @@ category: JavaScript
 字符串就是零个或多个排在一起的字符，放在单引号或双引号之中。
 
 ```js
-'abc'
-"abc"
+"abc";
+"abc";
 ```
 
 单引号字符串的内部，可以使用双引号。双引号字符串的内部，可以使用单引号。
 
 ```js
-'key = "value"'
-"It's a long journey"
+'key = "value"';
+"It's a long journey";
 ```
 
 上面两个都是合法的字符串。
@@ -26,10 +26,10 @@ category: JavaScript
 如果要在单引号字符串的内部，使用单引号，就必须在内部的单引号前面加上反斜杠，用来转义。双引号字符串内部使用双引号，也是如此。
 
 ```js
-'Did she say \'Hello\'?'
+'Did she say \'Hello\'?';
 // "Did she say 'Hello'?"
 
-"Did she say \"Hello\"?"
+"Did she say \"Hello\"?";
 // "Did she say "Hello"?"
 ```
 
@@ -70,10 +70,7 @@ longString;
 连接运算符(`+`)可以连接多个单行字符串，将长字符串拆成多行书写，输出的时候也是单行。
 
 ```js
-const longString = "Long "
-  + "long "
-  + "long "
-  + "string";
+const longString = "Long " + "long " + "long " + "string";
 ```
 
 如果想输出多行字符串，有一种利用多行注释的变通方法。
@@ -85,11 +82,11 @@ line 1
 line 2
 line 3
 */
-}
+})
   .toString()
   .split("\n")
   .slice(1, -1)
-  .join("\n"));
+  .join("\n");
 // "line 1
 // line 2
 // line 3"

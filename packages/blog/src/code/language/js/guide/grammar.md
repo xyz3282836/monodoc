@@ -34,13 +34,14 @@ let a = 1 + 3;
 语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内。下面的一行代码包含两个语句“
 
 ```js
-let x = 1; let y = 2; // 不建议一行写多个语句!
+let x = 1;
+let y = 2; // 不建议一行写多个语句!
 ```
 
 分号前面可以没有任何内容，JavaScript 引擎将其视为空语句。
 
 ```js
-;;;
+
 ```
 
 上面的代码就表示 3 个空语句。
@@ -147,7 +148,7 @@ JavaScript 提供两种注释的写法:
 
     ```js
     function countdown(n) {
-      while (n--> 0) console.log(n);
+      while (n-- > 0) console.log(n);
     }
     countdown(3);
     // 2

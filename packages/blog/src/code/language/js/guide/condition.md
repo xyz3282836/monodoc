@@ -32,8 +32,7 @@ JavaScript 提供 `if` 结构和 `switch` 结构，完成条件判断，即只�
     不要忘记 JavaScript 把 `false` 本身、`null` 、 `undefined` 、 `0` 、 `NaN` 和空字符串 `''` 视为 `false` ，其他值一概视为 `true`。
 
 ```js
-if (布尔值)
-  语句;
+if (布尔值) 语句;
 // 或者
 if (布尔值) 语句;
 ```
@@ -61,7 +60,7 @@ if (m === 3) {
 ```js
 let x = 1;
 const y = 2;
-if (x = y) {
+if ((x = y)) {
   console.log(x);
 }
 // "2"
@@ -154,9 +153,7 @@ if (age >= 18) {
 
     ::: warning
 
-
     `else` 代码块总是与离自己最近的那个 `if` 语句配对。
-
 
     :::
 

@@ -146,10 +146,10 @@ const { left, right } = processInput(input);
 
 ```js
 // bad
-const a = { k1: v1, k2: v2, };
+const a = { k1: v1, k2: v2 };
 const b = {
   k1: v1,
-  k2: v2
+  k2: v2,
 };
 
 // good

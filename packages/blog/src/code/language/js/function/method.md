@@ -88,10 +88,12 @@ Math.sqrt.toString();
 函数内部的注释也可以返回。
 
 ```js
-function f() {/*
+function f() {
+  /*
   这是一个
   多行注释
-*/}
+*/
+}
 
 f.toString();
 // "function f(){/*
@@ -108,10 +110,12 @@ var multiline = function (fn) {
   return arr.slice(1, arr.length - 1).join("\n");
 };
 
-function f() {/*
+function f() {
+  /*
   这是一个
   多行注释
-*/}
+*/
+}
 
 multiline(f);
 // " 这是一个

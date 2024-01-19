@@ -100,7 +100,7 @@ Page({
       },
       () => {
         // this is setData callback
-      }
+      },
     );
   },
   // 自由数据

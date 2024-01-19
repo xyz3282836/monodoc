@@ -91,8 +91,7 @@ This is [an example][id] reference-style link.
 您也可以把 title 属性放到下一行，也可以加一些缩进，网址太长的话，这样会比较好看:
 
 ```md
-[id]: http://example.com/longish/path/to/resource/here
-    "Optional Title Here"
+[id]: http://example.com/longish/path/to/resource/here "Optional Title Here"
 ```
 
 网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。
@@ -215,9 +214,9 @@ Markdown 使用星号 (`*`) 和底线 (`_`) 作为标记强调字词的符号。
 
 _single underscores_ (建议)
 
-__double underscores__
+**double underscores**
 
-*single asterisks*
+_single asterisks_
 ```
 
 **渲染结果**:
@@ -241,7 +240,7 @@ __double underscores__
 **输入**:
 
 ```md
-These two _, _ and *, * will be treated as normal characters.
+These two _, _ and _, _ will be treated as normal characters.
 ```
 
 **输出**:
@@ -261,12 +260,12 @@ These two \_, \_ and \*, \* will be treated as normal characters.
 **输入**:
 
 ```md
-A varibale like last_updated_time won’t be _transformed_ like last*updated*time.
+A varibale like last*updated_time won’t be \_transformed* like last*updated*time.
 ```
 
 **输出**:
 
-A varibale like last_updated_time won’t be _transformed_ like last*updated*time.
+A varibale like last*updated_time won’t be \_transformed* like last*updated*time.
 
 :::
 
@@ -337,7 +336,7 @@ Use the `printf()` function.
 **输入**:
 
 ```md
-`` There is a literal backtick (`) here. ``
+``There is a literal backtick (`) here.``
 ```
 
 **渲染结果**:
@@ -348,7 +347,7 @@ Use the `printf()` function.
 
 **输出**:
 
-`` There is a literal backtick (`) here. ``
+``There is a literal backtick (`) here.``
 
 :::
 

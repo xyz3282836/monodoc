@@ -68,7 +68,7 @@ let mySum = function (x: number, y: number): number {
 ```ts
 let mySum: (x: number, y: number) => number = function (
   x: number,
-  y: number
+  y: number,
 ): number {
   return x + y;
 };

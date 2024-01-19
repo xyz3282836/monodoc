@@ -5,12 +5,7 @@ star: 4
 sticky: 4
 ---
 
-<!-- markdownlint-disable MD033 -->
+## 目录
 
-<div class="catalog-display-container">
-  <AutoCatalog base='/tech/' />
-</div>
-
-<!-- markdownlint-enable MD033 -->
-
-遍历树，处理递归，还可以循环替换原来变量的方式
+- [golang](go/README.md)
+- [yaml](yaml/README.md)

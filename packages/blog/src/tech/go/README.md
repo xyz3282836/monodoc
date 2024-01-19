@@ -1,16 +1,12 @@
 ---
-title: Go
+title: golang 语言
 icon: go
-category: go
-tag:
-  - tip
+category: Go
 ---
 
 ::: tip
 
 正在完善中...
-
-明天见
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title: YAML 教程
 icon: yaml
-category: yaml
+category: YAML
 ---
 
 编程免不了要写配置文件，怎么写配置也是一门学问。
@@ -31,7 +31,7 @@ YAML 支持的数据结构有三种。
 
 ## 如何打开或编辑 yaml
 
-推荐使用 VS Code，具体详见[VS Code 简单介绍](../../../software/vscode/simple.md)。
+推荐使用 VS Code，具体详见[VS Code 简单介绍](../../software/vscode/simple.md)。
 
 ## 数据结构介绍
 

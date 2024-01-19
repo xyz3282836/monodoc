@@ -56,7 +56,6 @@ isAdult(50); // true
 
     突然，您想起了文档上有这么一句话:flushed::
 
-
     :::center
 
     JavaScript 引擎遇到 `return` 语句，就直接返回 `return` 后面的那个表达式的值，
@@ -86,7 +85,6 @@ isAdult(50); // true
     ```js
     const functionName = (arg1, arg2, ...) => value;
     ```
-
 
     :::right
 
@@ -123,7 +121,7 @@ isAdult(50); // true
     最后，是时候去掉那个愚蠢的括号了!
 
     ```js
-    const isAdult = age => age >= 18;
+    const isAdult = (age) => age >= 18;
     ```
 
     恭喜您，您已经得到了最简形式! :satisfied:
@@ -275,8 +273,8 @@ bookPrice(6，30); // 144
       ammount < 10
         ? price * ammount
         : ammount <= 20
-        ? price * ammount * 0.9
-        : price * ammount * 0.8;
+          ? price * ammount * 0.9
+          : price * ammount * 0.8;
     ```
 
     结合运算符顺序，您去掉了没用的括号，并将它写在一行:
@@ -286,8 +284,8 @@ bookPrice(6，30); // 144
       ammount < 10
         ? price * ammount
         : ammount <= 20
-        ? price * ammount * 0.9
-        : price * ammount * 0.8;
+          ? price * ammount * 0.9
+          : price * ammount * 0.8;
     ```
 
     它太长了，为什么不把公共的 `price * ammount` 提取出来呢?

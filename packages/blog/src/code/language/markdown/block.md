@@ -56,11 +56,9 @@ Setext[^setext] 格式不推荐使用。
     Setext 形式是用底线的形式，利用 `=` (最高阶标题) 和 `-` (第二阶标题) ，例如:
 
     ```md
-    This is an H1
-    =============
+    # This is an H1
 
-    This is an H2
-    -------------
+    ## This is an H2
     ```
 
     任何数量的 `=` 和 `-` 都可以有效果。
@@ -103,11 +101,11 @@ Markdown 使用 email 形式的块引言。
 
 ```md
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-  consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-  Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-  id sem consectetuer libero luctus adipiscing.
+> id sem consectetuer libero luctus adipiscing.
 ```
 
 **输出**:
@@ -115,11 +113,11 @@ Markdown 使用 email 形式的块引言。
 <!-- markdownlint-disable MD028 -->
 
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-  consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-  Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-  id sem consectetuer libero luctus adipiscing.
+> id sem consectetuer libero luctus adipiscing.
 
 <!-- markdownlint-enable MD028 -->
 
@@ -157,16 +155,16 @@ Markdown 使用 email 形式的块引言。
 
 **输入**:
 
-```md
+````md
 > 1. This is the first list item.
 > 1. This is the second list item.
 >
 > Here’s some example code:
-> 
+>
 > ```js
 > const a = 1;
 > ```
-```
+````
 
 **输出**:
 
@@ -208,9 +206,9 @@ Markdown 支持有序列表和无序列表。
 Markdown 最初的规范也支持使用星号、加号:
 
 ```md
-+ Red
-+ Green
-+ Blue
+- Red
+- Green
+- Blue
 
 * Red
 * Green
@@ -276,7 +274,7 @@ Markdown 最初的规范也支持使用星号、加号:
 ```md
 2. Bird
 3. McHale
-5. Parish
+4. Parish
 ```
 
 为了更加便捷的添加、删除或排序有序列表项，我们**推荐都设置为标号 `1`**。
@@ -288,8 +286,7 @@ Markdown 最初的规范也支持使用星号、加号:
 有些时候项目列表很可能会不小心被产生，比如:
 
 ```md
-XXX finally died in
-1986. What a great man.
+XXX finally died in 1986. What a great man.
 ```
 
 换句话说，也就是在行首出现*数字-句点-空白*，要避免这样的状况，您可以在句点前面加上反斜线。
@@ -329,19 +326,19 @@ XXX finally died in
 
 ```md
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
 - Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
 ```
 
 ::: details 渲染结果
 
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
 - Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
 
 :::
 
@@ -580,9 +577,7 @@ const a = 1;
 
 ````md
 ```html
-<div class="footer">
-  &copy; 2004 Foo Corporation
-</div>
+<div class="footer">&copy; 2004 Foo Corporation</div>
 ```
 ````
 
@@ -599,9 +594,7 @@ const a = 1;
 **输出**:
 
 ```html
-<div class="footer">
-  &copy; 2004 Foo Corporation
-</div>
+<div class="footer">&copy; 2004 Foo Corporation</div>
 ```
 
 :::

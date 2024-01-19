@@ -251,7 +251,7 @@ f(6);
 ```js
 f(x + 5)(
   // 传名调用时，等同于
-  x + 5
+  x + 5,
 ) * 2;
 ```
 
@@ -703,8 +703,8 @@ function next(ret) {
       "You may only yield a function, promise, generator, array, or object, " +
         'but the following object was passed: "' +
         String(ret.value) +
-        '"'
-    )
+        '"',
+    ),
   );
 }
 ```
