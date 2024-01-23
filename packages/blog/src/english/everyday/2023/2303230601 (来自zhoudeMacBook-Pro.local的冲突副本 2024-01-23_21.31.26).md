@@ -8,7 +8,7 @@ tag:
 
 Emmanuel Macron faced an angry `backlash` on Monday night after his government `narrowly` survived a `confidence` `vote` over his `controversial` pension reforms. Violent `protests` broke out as `demonstrators` were `urged` to take to the streets by `opposition` leaders and unions who `vowed` to `intensify` `strikes`. MPs from the hard-Left France `Unbowed` party shouted “Resign!” at Elisabeth Borne, the prime `minister`, moments after the failed `bid` to `topple` the government, while some `brandished` `placards` that read: “We’ll meet in the streets.”
 
-::: info tips
+::: tip tips
 
 backlash：后冲，强烈反对（lash 鞭子，鞭打）
 

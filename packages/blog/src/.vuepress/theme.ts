@@ -70,8 +70,13 @@ export default hopeTheme({
         "CodePen",
         "PDF",
         "Replit",
+        "Share",
         "SiteInfo",
         "StackBlitz",
+        "VPBanner",
+        "VPCard",
+        "VidStack",
+        "XiGua",
       ],
     },
 

@@ -1,1 +1,14 @@
 // place your custom styles here
+@use "@sass-palette/hope-config";
+
+@media (min-width: hope-config.$pc) {
+    html {
+        --content-width: calc(100vw - 40rem) !important;
+    }
+}
+
+@media (min-width: hope-config.$laptop) {
+    html {
+        --content-width: calc(100vw - 40rem) !important;
+    }
+}
