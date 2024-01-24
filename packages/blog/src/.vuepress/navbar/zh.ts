@@ -1,5 +1,5 @@
 import { navbar } from "vuepress-theme-hope";
-
+import { VERSION } from "./../utils.js";
 export const zhNavbar = navbar([
   "/",
   {
@@ -76,5 +76,10 @@ export const zhNavbar = navbar([
       "git/",
       "comsol/",
     ],
+  },
+  {
+    text: `${VERSION}`,
+    icon: "vue",
+    link: "https://theme-hope.vuejs.press/",
   },
 ]);
