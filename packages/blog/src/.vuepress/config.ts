@@ -1,7 +1,10 @@
-import { defineUserConfig } from "@vuepress/cli";
+import type { UserConfig } from "vuepress";
+import { defineUserConfig } from "vuepress";
+import { appendDatePlugin } from "vuepress-plugin-append-date";
+
 import theme from "./theme.js";
 
-export default defineUserConfig({
+export default <UserConfig>defineUserConfig({
   base: "/",
 
   locales: {
@@ -23,6 +26,8 @@ export default defineUserConfig({
   },
 
   theme,
+
+  plugins: [appendDatePlugin()],
 
   shouldPrefetch: false,
 
