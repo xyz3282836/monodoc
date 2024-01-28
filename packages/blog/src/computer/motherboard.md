@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27
 title: 主板
 category: 硬件
 tag:

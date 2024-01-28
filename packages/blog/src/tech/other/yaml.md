@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27
 title: YAML 教程
 icon: yaml
 category: yaml

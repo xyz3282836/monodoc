@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27
 title: 软件教程
 icon: software
 star: 9

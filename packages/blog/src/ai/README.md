@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27
 title: AI
 icon: people
 category: ai

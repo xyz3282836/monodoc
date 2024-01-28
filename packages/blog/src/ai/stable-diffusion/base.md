@@ -1,4 +1,5 @@
 ---
+date: 2024-01-27
 title: 基础
 icon: pic
 category: ai
