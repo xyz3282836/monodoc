@@ -101,7 +101,7 @@ ever 任何时候；曾经
 | embark 从事                                          | velocity 速度；迅速                        | monolith 巨石                                           |
 | comprise 包含，构成                                  | modularity 模块化                          | orient 东方，东方诸国；以...为方向，面向                |
 | enormous 巨大的                                      | utilize 利用                               | precede 优于；前面                                      |
-|                                                      |                                            |                                                         |
+| immediately 立刻；紧挨地                             | precede 前面                               | aid in doing sth 帮组                                   |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
