@@ -10,8 +10,6 @@ export default hopeTheme({
     url: "https://github.com/xyz3282836/monodoc",
   },
 
-  iconAssets: "iconfont",
-
   logo: "/hero.png",
 
   repo: "xyz3282836/monodoc",

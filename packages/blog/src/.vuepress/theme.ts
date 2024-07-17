@@ -11,8 +11,6 @@ export default hopeTheme({
   },
 
   favicon: "/favicon.ico",
-  
-  iconAssets: "iconfont",
 
   logo: "/hero.png",
 
