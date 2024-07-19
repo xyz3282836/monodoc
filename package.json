@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "env": "NODE_OPTIONS: --max_old_space_size=8192",
     "note:lint": "pnpm --filter=note lint",
     "blog:lint": "pnpm --filter=blog lint",
     "note:new": "mv ./packages/note/src/.vuepress ./packages/note/ && rm -fr ./packages/note/src && cp -r ~/sync/doc/ ./packages/note/src && mv ./packages/note/.vuepress ./packages/note/src/",
