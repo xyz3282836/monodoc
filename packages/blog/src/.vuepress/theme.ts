@@ -66,18 +66,7 @@ export default hopeTheme({
 
     components: {
       components: [
-        "ArtPlayer",
-        "Badge",
-        "BiliBili",
-        "CodePen",
-        "PDF",
-        "Share",
-        "SiteInfo",
-        "StackBlitz",
-        "VPBanner",
-        "VPCard",
-        "VidStack",
-        "XiGua"
+        "BiliBili"
       ],
     },
 
