@@ -62,23 +62,22 @@ export default hopeTheme({
       excerptLength: 0,
     },
 
-    components: {
-      components: [
-        "ArtPlayer",
-        "Badge",
-        "BiliBili",
-        "CodePen",
-        "PDF",
-        "Replit",
-        "Share",
-        "SiteInfo",
-        "StackBlitz",
-        "VPBanner",
-        "VPCard",
-        "VidStack",
-        "XiGua",
-      ],
-    },
+    // components: {
+    //   components: [
+    //     "ArtPlayer",
+    //     "Badge",
+    //     "BiliBili",
+    //     "CodePen",
+    //     "PDF",
+    //     "Share",
+    //     "SiteInfo",
+    //     "StackBlitz",
+    //     "VPBanner",
+    //     "VPCard",
+    //     "VidStack",
+    //     "XiGua",
+    //   ],
+    // },
 
     copyright: true,
 
