@@ -49,8 +49,11 @@ importers:
         version: 2.0.0-rc.52(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
       vuepress-theme-hope:
         specifier: 2.0.0-rc.52
-        version: 2.0.0-rc.52(y32ozfymhecd6da4v7tcvainge)
+        version: 2.0.0-rc.52(sqsljxwvg2z3n522wvg5a62olu)
     devDependencies:
+      artplayer:
+        specifier: ^5.1.6
+        version: 5.1.6
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -60,6 +63,9 @@ importers:
       prettier:
         specifier: 3.3.3
         version: 3.3.3
+      vidstack:
+        specifier: ^1.11.30
+        version: 1.11.30
 
   packages/blog: {}
 
@@ -793,6 +799,15 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@floating-ui/core@1.6.5':
+    resolution: {integrity: sha512-8GrTWmoFhm5BsMZOTHeGD2/0FLKLQQHvO/ZmQga4tKempYRLz8aqJGqXVuQgisnMObq2YZ2SgkwctN1LOOxcqA==}
+
+  '@floating-ui/dom@1.6.8':
+    resolution: {integrity: sha512-kx62rP19VZ767Q653wsP1XZCGIirkE09E0QUGNYTM/ttbbQHqcGPdSfWFxUyyNLc/W6aoJRBajOSXhP6GXjC0Q==}
+
+  '@floating-ui/utils@0.2.5':
+    resolution: {integrity: sha512-sTcG+QZ6fdEUObICavU+aB3Mp8HY4n14wYHdxK4fXjPmv3PXZZeY5RaguJmGyeH/CJQhX3fqKUtS4qc1LoHwhQ==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -3373,6 +3388,9 @@ packages:
   lit-element@4.0.6:
     resolution: {integrity: sha512-U4sdJ3CSQip7sLGZ/uJskO5hGiqtlpxndsLr6mt3IQIjheg93UKYeGQjWMRql1s/cXNOaRrCzC2FQwjIwSUqkg==}
 
+  lit-html@2.8.0:
+    resolution: {integrity: sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==}
+
   lit-html@3.1.4:
     resolution: {integrity: sha512-yKKO2uVv7zYFHlWMfZmqc+4hkmSbFp8jgjdZY9vvR9jr4J8fH6FUMXhr+ljfELgmjpvlF7Z1SJ5n5/Jeqtc9YA==}
 
@@ -4747,8 +4765,8 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vidstack@1.11.21:
-    resolution: {integrity: sha512-DtsbT8zsLUCF27vRheFLEnpUzy0TsLzIt2EqiZyYvwho7nKgiVR32GuJVKRj9BTj80SSRxzLQ0/tx99fum6Rmw==}
+  vidstack@1.11.30:
+    resolution: {integrity: sha512-RbHh204Y+fta7CeoQ4TblbFO6P2zcwhYF4O52jDTHcr9R/CazB3Bzyxltz+UWVMmrkmDIJ0Hd4IJywkn7p/ivA==}
     engines: {node: '>=18'}
 
   vite@5.3.4:
@@ -6125,6 +6143,17 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@floating-ui/core@1.6.5':
+    dependencies:
+      '@floating-ui/utils': 0.2.5
+
+  '@floating-ui/dom@1.6.8':
+    dependencies:
+      '@floating-ui/core': 1.6.5
+      '@floating-ui/utils': 0.2.5
+
+  '@floating-ui/utils@0.2.5': {}
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -7339,7 +7368,6 @@ snapshots:
   artplayer@5.1.6:
     dependencies:
       option-validator: 2.0.6
-    optional: true
 
   async@3.2.5:
     optional: true
@@ -9116,6 +9144,10 @@ snapshots:
       '@lit/reactive-element': 2.0.4
       lit-html: 3.1.4
 
+  lit-html@2.8.0:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
   lit-html@3.1.4:
     dependencies:
       '@types/trusted-types': 2.0.7
@@ -9253,8 +9285,7 @@ snapshots:
 
   mdurl@2.0.0: {}
 
-  media-captions@1.0.3:
-    optional: true
+  media-captions@1.0.3: {}
 
   media-typer@0.3.0: {}
 
@@ -9575,7 +9606,6 @@ snapshots:
   option-validator@2.0.6:
     dependencies:
       kind-of: 6.0.3
-    optional: true
 
   ora@8.0.1:
     dependencies:
@@ -10607,7 +10637,6 @@ snapshots:
       chokidar: 3.6.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.6.2
-    optional: true
 
   upath@1.2.0:
     optional: true
@@ -10643,11 +10672,12 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vidstack@1.11.21:
+  vidstack@1.11.30:
     dependencies:
+      '@floating-ui/dom': 1.6.8
+      lit-html: 2.8.0
       media-captions: 1.0.3
       unplugin: 1.11.0
-    optional: true
 
   vite@5.3.4(@types/node@20.14.11)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3):
     dependencies:
@@ -10687,7 +10717,7 @@ snapshots:
       '@vue/server-renderer': 3.4.33(vue@3.4.33)
       '@vue/shared': 3.4.33
 
-  vuepress-plugin-components@2.0.0-rc.52(artplayer@5.1.6)(dashjs@4.7.4)(hls.js@1.5.13)(mpegts.js@1.7.3)(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vidstack@1.11.21)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33)):
+  vuepress-plugin-components@2.0.0-rc.52(artplayer@5.1.6)(dashjs@4.7.4)(hls.js@1.5.13)(mpegts.js@1.7.3)(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vidstack@1.11.30)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33)):
     dependencies:
       '@stackblitz/sdk': 1.11.0
       '@vuepress/helper': 2.0.0-rc.39(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
@@ -10705,7 +10735,7 @@ snapshots:
       hls.js: 1.5.13
       mpegts.js: 1.7.3
       sass-loader: 14.2.1(sass@1.77.8)(webpack@5.93.0)
-      vidstack: 1.11.21
+      vidstack: 1.11.30
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
@@ -10792,7 +10822,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.52(y32ozfymhecd6da4v7tcvainge):
+  vuepress-theme-hope@2.0.0-rc.52(sqsljxwvg2z3n522wvg5a62olu):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.39(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.39(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
@@ -10823,7 +10853,7 @@ snapshots:
       gray-matter: 4.0.3
       vue: 3.4.33
       vuepress: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33)
-      vuepress-plugin-components: 2.0.0-rc.52(artplayer@5.1.6)(dashjs@4.7.4)(hls.js@1.5.13)(mpegts.js@1.7.3)(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vidstack@1.11.21)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
+      vuepress-plugin-components: 2.0.0-rc.52(artplayer@5.1.6)(dashjs@4.7.4)(hls.js@1.5.13)(mpegts.js@1.7.3)(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vidstack@1.11.30)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
       vuepress-plugin-md-enhance: 2.0.0-rc.52(@vue/repl@4.3.1)(chart.js@4.4.3)(echarts@5.5.1)(flowchart.ts@3.0.0)(katex@0.16.11)(markdown-it@14.1.0)(mathjax-full@3.2.2)(mermaid@10.9.1)(reveal.js@5.1.0)(sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0))(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
       vuepress-shared: 2.0.0-rc.52(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.11)(jiti@1.21.6)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(yaml@2.4.5))(@vuepress/bundler-webpack@2.0.0-rc.14)(vue@3.4.33))
     optionalDependencies:
@@ -10959,8 +10989,7 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack-virtual-modules@0.6.2:
-    optional: true
+  webpack-virtual-modules@0.6.2: {}
 
   webpack@5.93.0:
     dependencies:
