@@ -7,7 +7,7 @@ category: 英文
 <!-- markdownlint-disable MD033 -->
 
 <div class="catalog-display-container">
-  <AutoCatalog base='/english/everyday/' />
+  <Catalog base='/english/everyday/' />
 </div>
 
 <!-- markdownlint-enable MD033 -->
