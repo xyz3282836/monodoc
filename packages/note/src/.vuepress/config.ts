@@ -1,5 +1,6 @@
-import { defineUserConfig } from "@vuepress/cli";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { appendDatePlugin } from "@vuepress/plugin-append-date";
+import { defineUserConfig } from "vuepress";
+
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -14,6 +15,8 @@ export default defineUserConfig({
   },
 
   theme,
+
+  plugins: [appendDatePlugin()],
 
   shouldPrefetch: false,
 
