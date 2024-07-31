@@ -80,6 +80,6 @@ export const zhNavbar = navbar([
   {
     text: `${VERSION}`,
     icon: "vue",
-    link: "https://theme-hope.vuejs.press/",
+    link: "https://theme-hope.vuejs.press/changelog.html",
   },
 ]);

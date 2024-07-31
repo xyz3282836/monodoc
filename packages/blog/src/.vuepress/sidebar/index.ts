@@ -68,6 +68,6 @@ export const zhSidebar = sidebar({
 
   "/code/": code,
 
-  // fallback
-  "/": ["", "ai", "english/", "computer/", "tech/", "software/"],
+  // fallback，在about me页面中使用
+  "/": ["", "ai/", "english/", "computer/", "tech/", "software/"],
 });
