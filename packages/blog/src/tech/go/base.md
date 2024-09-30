@@ -257,3 +257,61 @@ channel三种状态喝三种操作后果
 死码消除有很多好处：减小程序体积，程序运行过程中避免执行无用的指令，缩短运行时间。
 
 在声明全局变量时，如果能够确定为常量，尽量使用 const 而非 var，这样很多运算在编译器即可执行。死码消除后，既减小了二进制的体积，又可以提高运行时的效率，如果这部分代码是 `hot path`，那么对性能的提升会更加明显。
+
+## 内存分配
+
+go采用tcmalloc，官方文档地址：https://goog-perftools.sourceforge.net/doc/tcmalloc.html
+
+特点
+
+- 使用多级缓存针对对象的大小分类
+- 按照类别实施不同的分配策略
+
+即如果要分配的对象是个小对象（<= 32k），在每个线程中都会有一个无锁的小对象缓存，可以直接高效的无锁的方式进行分配
+
+如果是个大对象（>32k），那么页堆进行分配
+
+堆上所有的对象都会通过调用`runtime.newobject`函数分配内存，该函数会调用`runtime.mallocgc`
+
+```go
+func mallocgc(size uintptr, typ *_type, needzero bool) unsafe.Pointer {
+...
+  // maxSmallSize是32K
+	if size <= maxSmallSize-mallocHeaderSize {
+    // maxTinySize 是16bytes
+		if noscan && size < maxTinySize {
+      // 小于16bytes的微对象
+    } else{
+      // 在16bytes与32k之间的小对象
+    }
+  } else {
+    // 大于 32 Kb的大对象
+    ...
+    	span = c.allocLarge(size, noscan)
+    ...
+  }
+...
+}
+```
+
+大于 32 Kb的大对象，调用`allocLarge`
+
+```go
+func (c *mcache) allocLarge(size uintptr, noscan bool) *mspan {
+  // 溢出，_PageSize = 1 << _PageShift；_PageShift是8K
+	if size+_PageSize < size {
+		throw("out of memory")
+	}
+  // 高于8K的位信息表示有多少8K页，以及是否存在不足一页，存在就需要加1页
+	npages := size >> _PageShift
+  // _PageMask = _PageShift - 1
+	if size&_PageMask != 0 {
+		npages++
+	}
+  ...
+}
+```
+
+### reference
+
+https://www.luozhiyun.com/archives/434

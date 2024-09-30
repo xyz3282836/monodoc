@@ -102,8 +102,8 @@ ever 任何时候；曾经
 | comprise 包含，构成                                  | modularity 模块化                          | orient 东方，东方诸国；以...为方向，面向                |
 | enormous 巨大的                                      | utilize 利用                               | precede 优于；前面                                      |
 | immediately 立刻；紧挨地                             | precede 前面                               | aid in doing sth 帮组                                   |
-|                                                      |                                            |                                                         |
-|                                                      |                                            |                                                         |
+| fine grained 细颗粒度                                | fine 罚款；好的；细小的                    | grain 谷粒；纹理                                        |
+| spinlock 自旋锁                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
 |                                                      |                                            |                                                         |
