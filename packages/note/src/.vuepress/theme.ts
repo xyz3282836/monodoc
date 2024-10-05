@@ -56,17 +56,10 @@ export default hopeTheme({
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
-      codetabs: true,
       demo: true,
-      figure: true,
       flowchart: true,
       footnote: true,
-      imgLazyload: true,
-      imgMark: true,
-      imgSize: true,
-      mathjax: true,
       mermaid: true,
-      revealJs: true,
       sub: true,
       sup: true,
       vPre: true,

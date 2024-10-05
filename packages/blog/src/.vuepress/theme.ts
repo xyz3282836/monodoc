@@ -89,12 +89,10 @@ export default hopeTheme({
 
     mdEnhance: {
       align: true,
-      codetabs: true,
       demo: true,
       flowchart: true,
       footnote: true,
       mermaid: true,
-      revealJs: true,
       sub: true,
       sup: true,
       vPre: true
