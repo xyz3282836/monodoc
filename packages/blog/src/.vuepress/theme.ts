@@ -64,6 +64,9 @@ export default hopeTheme({
       excerptLength: 0,
     },
 
+    // 开启数学支持，比如公式等
+    markdownMath: true,
+
     components: {
       components: [
         "Badge",
