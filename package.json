@@ -21,7 +21,6 @@
     "@vuepress/bundler-webpack": "2.0.0-rc.18",
     "@vuepress/plugin-append-date": "2.0.0-rc.55",
     "@vuepress/plugin-feed": "2.0.0-rc.55",
-    "@vuepress/plugin-markdown-tab": "2.0.0-rc.55",
     "@vuepress/plugin-revealjs": "2.0.0-rc.55",
     "flowchart.ts": "3.0.1",
     "mathjax-full": "3.2.2",
