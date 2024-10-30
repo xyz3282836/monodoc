@@ -2,7 +2,7 @@
 date: 2024-10-30
 title: 科技发布会
 icon: event
-category: launch-event
+category: 发布会
 star: 3
 sticky: 3
 ---
