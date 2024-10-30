@@ -9,6 +9,12 @@ export const zhNavbar = navbar([
     link: "/ai/",
   },
   {
+    text: "科技发布会",
+    icon: "event",
+    prefix: "/launch-event/",
+    link: "/launch-event/",
+  },
+  {
     text: "英文",
     icon: "note",
     prefix: "/english/",

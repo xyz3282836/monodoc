@@ -29,7 +29,7 @@ export const zhSidebar = sidebar({
   "/ai/": "structure",
   "/tech/": "structure",
   "/computer/": computer,
-
+  "/launch-event/": "structure",
   "/linux/": linux,
 
   "/code/windows/": "structure",
