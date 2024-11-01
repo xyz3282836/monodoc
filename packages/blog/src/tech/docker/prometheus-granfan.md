@@ -52,7 +52,6 @@ basic_auth_users:
 ### compose.yml
 
 ```yaml
-version: "1.0"
 services:
   prometheus:
     restart: always
@@ -94,12 +93,6 @@ services:
 ### run shell
 
 ```shell
-docker run \
-    -p 9090:9090 \
-    -v ~/dev/promtheus/bwg_wode/config/prometheus.yml:/etc/prometheus/prometheus.yml \
-    -v ~/dev/promtheus/bwg_wode/data:/etc/prometheus/data \
-    prom/prometheus:latest \
-	--storage.tsdb.path=/etc/prometheus/data \
-	--storage.tsdb.retention.time=30d \
-	--config.file=/etc/prometheus/prometheus.yml
+# cd compose.yml目录下，执行构建和启动
+docker compose up -d
 ```
