@@ -24,7 +24,7 @@ go test -run Testxxx
 go test -bench xxx
 ```
 
-必须`Benchmark`开头，负责出错
+必须`Benchmark`开头，否则出错
 
 例子：
 

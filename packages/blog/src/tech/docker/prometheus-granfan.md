@@ -96,3 +96,11 @@ services:
 # cd compose.yml目录下，执行构建和启动
 docker compose up -d
 ```
+
+granfan
+
+data source
+
+```
+http://host.docker.internal:9090
+```
