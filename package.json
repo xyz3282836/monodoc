@@ -19,23 +19,23 @@
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.18",
     "@vuepress/bundler-webpack": "2.0.0-rc.18",
-    "@vuepress/plugin-append-date": "2.0.0-rc.56",
-    "@vuepress/plugin-feed": "2.0.0-rc.56",
-    "@vuepress/plugin-revealjs": "2.0.0-rc.56",
+    "@vuepress/plugin-append-date": "2.0.0-rc.65",
+    "@vuepress/plugin-feed": "2.0.0-rc.65",
+    "@vuepress/plugin-revealjs": "2.0.0-rc.65",
     "flowchart.ts": "3.0.1",
     "mathjax-full": "3.2.2",
-    "mermaid": "11.3.0",
-    "sass-loader": "16.0.2",
-    "vite": "5.4.9",
-    "vue": "3.5.12",
+    "mermaid": "11.4.1",
+    "sass-loader": "16.0.4",
+    "vite": "6.0.3",
+    "vue": "3.5.13",
     "vuepress": "2.0.0-rc.18",
     "vuepress-plugin-search-pro": "2.0.0-rc.59",
-    "vuepress-theme-hope": "2.0.0-rc.59"
+    "vuepress-theme-hope": "2.0.0-rc.63"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "markdownlint-cli": "0.41.0",
-    "prettier": "3.3.3",
-    "sass-embedded": "1.80.3"
+    "markdownlint-cli": "0.43.0",
+    "prettier": "3.4.2",
+    "sass-embedded": "1.82.0"
   }
 }
