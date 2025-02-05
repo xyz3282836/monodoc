@@ -13,12 +13,6 @@ export default hopeTheme(
 
     favicon: "/favicon.ico",
 
-    iconAssets: [
-      "//at.alicdn.com/t/c/font_4728484_srrcjkvxbe.css",
-      "//at.alicdn.com/t/c/font_4728484_yu56xjgshml.css",
-      "fontawesome-with-brands"
-    ],
-
     logo: "/hero.png",
 
     repo: "xyz3282836/monodoc",
@@ -120,6 +114,13 @@ export default hopeTheme(
       },
       slimsearch: {
         indexContent: true,
+      },
+
+      icon: {
+        assets: [
+          "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css",
+          "fontawesome-with-brands"
+        ]
       }
     },
   },
