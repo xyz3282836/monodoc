@@ -119,8 +119,9 @@ export default hopeTheme(
       icon: {
         assets: [
           "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css",
-          "fontawesome-with-brands"
-        ]
+          "//at.alicdn.com/t/c/font_4728484_srrcjkvxbe.css",
+          // "fontawesome-with-brands", // 和上面冲突
+        ],
       }
     },
   },
