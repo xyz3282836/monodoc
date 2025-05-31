@@ -23,8 +23,6 @@ export default hopeTheme(
 
     sidebarSorter: ["readme", "order", "date-desc", "title", "filename"],
 
-    headerDepth: 6,
-
     fullscreen: true,
 
     locales: {
