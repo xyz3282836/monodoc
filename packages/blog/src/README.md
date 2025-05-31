@@ -1,7 +1,7 @@
 ---
 date: 2024-01-27
 home: true
-layout: Blog
+layout: BlogHome
 icon: home
 title: 主页
 heroImage: /2233.png
