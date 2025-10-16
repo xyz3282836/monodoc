@@ -128,18 +128,15 @@ tag:
   - 轻量微操作 base
   - 微码序列器 microcode sequencer
 - 错误投机 bad speculation
-
   - 分支预测错误 brach mispred
   - 机器清理 machine clears
 
 - linux perf中TMA，获取TMA第1层指标
-
   - perf stat --topdown -a -- taskset -c 0 ./exec b
     - --topdown可以查看TMA指标
     - taskset -c 0可以绑定core 0
 
 - toplev可以获取TMA的第2，3层指标
-
   - python实现，通过封装和调用linux perf工具实现
 
   - ```
@@ -174,7 +171,6 @@ tag:
 #### 最后分支记录
 
 - 利用该特性可以持续地记录大量已经执行的分支跳转指令
-
   - ```
     perf record -b -e cycles ./exec
     ```

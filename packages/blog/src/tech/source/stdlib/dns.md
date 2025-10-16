@@ -133,9 +133,7 @@ netgroup:       nis
 - 如果`network`时`tcp`，那么域名的A和AAAA记录都会被查询，无论服务器是否关闭ipv6
 
 - `goLookupIPCNAMEOrder` 会调用 `tryOneName`
-
   - `tryOneName` 会进行dns查询，如果不能满足四个条件（go 1.23之前，1.23五个条件）
-
     - 响应没有错误
     - 应答 Server 不是权威服务器
     - 应答 Server 不支持递归请求

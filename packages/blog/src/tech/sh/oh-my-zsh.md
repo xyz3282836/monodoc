@@ -16,6 +16,20 @@ tag:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+### font
+
+#### nerd font
+
+可以显示各种图标字体
+
+```shell
+brew install --cask font-hack-nerd-font
+```
+
+设置
+
+Profiles → Text，选择`Hack Nerd Font Mono`
+
 ### plugin
 
 #### zsh-autosuggestions

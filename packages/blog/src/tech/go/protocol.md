@@ -152,3 +152,63 @@ protoc --gogoslick_out=plugins=grpc:/Users/zhou/go/src/grpcdemo/ api/v1/hello.pr
 2. import：proto "github.com/`gogo`/protobuf/proto"，reflect "reflect"
 3. 和 gofast，gogofast 比，没有 XXX_NoUnkeyedLiteral，XXX_unrecognized，XXX_sizecache
 4. 生成 string, gostring and equal methods
+
+## 案例
+
+在go/src 目录下，demo/pb/data 下存在一个proto
+
+```protobuf
+syntax = "proto3";
+// 当其他 proto 文件引用此文件中的消息类型时，需要使用这个命名空间，例如：pb.data.SocMapMessage
+package pb.data;
+// 控制.pb.go 生产路径，以及 package 名称
+option  go_package = "pb/data";
+
+message SocMapMessage {
+    map<string, int64> soc_map = 1;
+}
+```
+
+### go_package
+
+在 Protocol Buffers 中，`option go_package = "pb/data";` 指令有以下作用：
+
+1. **指定生成的 Go 代码包路径**
+   - 它告诉 `protoc` 编译器生成的 Go 文件应该使用什么包路径
+   - 这决定了生成的 `.pb.go` 文件中的 `package` 声明
+2. **影响导入方式**
+   - 当其他 Go 代码导入这个生成的包时，需要使用这个路径
+   - 例如：`import "pb/data"`
+3. **确定输出位置**
+   - 与 `protoc` 的 `--go_out` 和 `--go_opt=paths=source_relative` 参数配合使用
+   - 控制 `.pb.go` 文件的生成位置
+4. **影响包名**
+   - 在这个例子中，生成的文件会使用 `package data`
+   - 包名取自路径的最后一部分 (`data`)
+
+### package
+
+在 Protocol Buffers 中，`package pb.data;` 声明有以下作用：
+
+1. **命名空间**：
+   - 定义了 proto 文件中所有消息类型的命名空间
+   - 防止与其他 proto 文件中的同名消息类型发生冲突
+2. **跨语言影响**：
+   - C++: 转换为 namespace `pb::data`
+   - Java: 转换为包名 `pb.data`
+   - Python: 影响生成的模块结构
+   - 其他语言: 以类似方式映射到对应语言的命名空间概念
+3. **消息引用**：
+   - 当其他 proto 文件引用此文件中的消息类型时，需要使用这个命名空间
+   - 例如：`pb.data.SocMapMessage`
+4. **与 Go 包名关系**：
+   - 在 Go 中，实际的包名由 `go_package` 选项决定
+   - `package` 声明主要用于 proto 文件之间的引用，而不直接决定 Go 代码的包名
+
+总之，`package pb.data;` 定义了 Protocol Buffers 的命名空间，对所有支持的语言都有影响，而 `go_package` 则专门针对 Go 语言代码生成。
+
+一般使用，cd 到 demo目录下，执行
+
+```shell
+protoc --go_out=./ --go-grpc_out=./ ./pb/data/soc_map.proto
+```

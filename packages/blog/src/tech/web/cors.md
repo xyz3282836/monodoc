@@ -28,7 +28,6 @@ CORS，跨域资源共享（Cross-origin resource sharing）的本质是由服�
 2. #### Origin 校验错误
 
    校验Origin头时使用了错误的方式，如：
-
    - 前缀匹配：例如[www.example.com](http://www.example.com/) 想要允许[example.com](http://example.com/)访问，但是只做了前缀匹配，导致同时信任了[example.com.attack.com](http://example.com.attack.com/)的访问，而[example.com.attack.com](http://example.com.attack.com/) 是攻击者可以控制的网站。
    - 后缀匹配：例如[www.example.com](http://www.example.com/) 想要允许[example.com](http://example.com/)访问，由于后缀匹配出错，导致允许[attackexample.com](http://attackexample.com/)访问。
    - 没有转义’.’：例如，[example.com](http://example.com/)想要允许[www.example.com](http://www.example.com/) 访问时，但正则匹配没有转义’.’，导致允许[wwwaexample.com](http://wwwaexample.com/)访问。
