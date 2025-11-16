@@ -73,6 +73,7 @@ export default hopeTheme(
       imgMark: true,
       imgSize: true,
       footnote: true,
+      mark: true,
       mermaid: true,
       revealjs: true,
       sub: true,
@@ -80,7 +81,9 @@ export default hopeTheme(
       tabs: true,
       vPre: true,
       // 开启数学支持，比如公式等
-      math: true,
+      math: {
+        type: "mathjax",
+      },
     },
 
     plugins: {
