@@ -1,0 +1,42 @@
+name: Deploy blog
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    gen-pages:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5
+              with:
+                  submodules: true
+                  fetch-depth: 0
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: true
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 22
+                  cache: pnpm
+
+            - name: Build Blog
+              env:
+                  NODE_OPTIONS: --max_old_space_size=4096
+              run: pnpm run blog:gen
+
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  external_repository: xyz3282836/blog
+                  publish_branch: master
+                  publish_dir: ./packages/blog/src/.vuepress/dist
+                  user_name: "github-actions[bot]"
+                  user_email: "github-actions[bot]@users.noreply.github.com"
