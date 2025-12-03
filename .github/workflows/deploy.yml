@@ -26,12 +26,12 @@ jobs:
                   node-version: 22
                   cache: pnpm
 
-            - name: Build Blog
+            - name: Build Blog Pages
               env:
                   NODE_OPTIONS: --max_old_space_size=16384
               run: pnpm run blog:gen
 
-            - name: Deploy to GitHub Pages
+            - name: Push Blog Pages To Blog Repo
               uses: peaceiris/actions-gh-pages@v3
               with:
                   personal_token: ${{ secrets.PERSONAL_TOKEN }}
