@@ -26,4 +26,4 @@ sudo chmod 777 "/Users/zhou/Library/Application Support/LogiOptionsPlus"
 
 以下三个必须都要登入自启动，mac自带的登入启动配置只能选择一个
 
-![Logi-Error](/Users/zhou/sync/blog/tech/logi/assets/logi_err.png)
+![Logi-Error](./assets/logi_err.png)
