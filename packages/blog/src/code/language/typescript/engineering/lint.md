@@ -55,7 +55,7 @@ console.log(`My name is ${myName}`);
 | 存在的问题                      | `tsc` 是否报错 | `eslint` 是否报错 |
 | ------------------------------- | -------------- | ----------------- |
 | `myName` 被误写成了 `myNane`    | ✅             | ✅                |
-| `toString` 被误写成了 `toStrng` | ✅️            | ❌                |
+| `toString` 被误写成了 `toStrng` | ✅️             | ❌                |
 | 少了一个分号                    | ❌             | ✅                |
 
 上例中，由于 `eslint` 无法识别 `myName` 存在哪些方法，所以对于拼写错误的 `toString` 没有检查出来。
