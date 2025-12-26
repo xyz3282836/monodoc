@@ -1,5 +1,5 @@
 ---
-date: 2024-01-27
+date: 2021-01-27
 title: Windows PowerShell
 author: 沈启民
 icon: shell

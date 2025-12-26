@@ -1,5 +1,5 @@
 ---
-date: 2024-01-27
+date: 2022-01-12
 title: MySQL
 icon: mysql
 author: 李欣桐

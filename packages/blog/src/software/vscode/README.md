@@ -1,5 +1,5 @@
 ---
-date: 2024-01-27
+date: 2022-01-07
 title: VS Code
 icon: vscode
 category: VS Code
