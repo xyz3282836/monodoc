@@ -44,6 +44,24 @@ cd /Applications/V2rayU.app/Contents/Resources
 sh cmd.sh
 ```
 
+### Surge
+
+[Surge 6.4](https://github.com/LanYunDev/InjectLib_bak/releases/tag/6.4)
+
+[Latest](https://github.com/LanYunDev/InjectLib_bak/releases/latest)
+
+**请自己使用, 不要宣传/分享/泄漏安装包, 和作者对抗没意义**
+
+**无需启动器(From macked，SIP OFF/ON均可，推荐👍): `Surge-6.4.2.9830.7z` 无增强模式,测试通过✅**
+
+(如果原本存在surge，直接覆盖安装，可能会会弹出需要输密码，直接输密码然后始终允许即可，因为会读取你保存的钥匙串内容)
+
+遇到问题(如`无法打开/崩溃/切换版本`)等， 安装`Surge.app`到`/Applications`后打开`终端` 粘贴 以下代码解决
+
+```shell
+/usr/bin/xattr -rc '/Applications/Surge.app'; codesign -f -s - --deep '/Applications/Surge.app/Contents/Applications/Surge Dashboard.app'; codesign -f -s - --deep '/Applications/Surge.app'; sudo killall -9 com.nssurge.surge-mac.ne; sudo killall -9 com.nssurge.surge-mac.helper; sudo launchctl unload /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist; sudo launchctl stop com.nssurge.surge-mac.helper; sudo launchctl remove com.nssurge.surge-mac.helper; sudo rm -rf /Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper; sudo cp -f '/Applications/Surge.app/Contents/Library/LaunchServices/com.nssurge.surge-mac.helper' /Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper; sudo codesign -f -s - /Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper; sudo chmod +x /Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper; sudo launchctl enable system/com.nssurge.surge-mac.helper; sudo launchctl load /Library/LaunchDaemons/com.nssurge.surge-mac.helper.plist; sudo launchctl start com.nssurge.surge-mac.helper
+```
+
 ## 鼠标滚动方向
 
 ```shell
